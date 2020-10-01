@@ -1,0 +1,172 @@
+@import "./variables";
+@import "./mixins";
+
+.main-slider {
+  position: relative;
+}
+
+.slideshow {
+  margin: 0 auto;
+  position: relative;
+
+  &__nav {
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin-top: -25px;
+    position: absolute;
+    top: 50%;
+    transition: all linear 0.3s;
+    width: 50px;
+
+    &_prev {
+      left: 0;
+    }
+    &_next {
+      right: 0;
+    }
+  }
+
+  &__slide {
+    display: none;
+    position: relative;
+  }
+  &__slide.active {
+    // animation: fade linear 1.5s;
+    display: block;
+    transition: all 0.6s ease;
+  }
+
+  &__img1 {
+    @include mainSlider();
+    background-image: url(../img/pumpkin.webp);
+    height: $height-main-slider;
+  }
+
+  &__img2 {
+    @include mainSlider();
+    background-image: url(../img/carrot.webp);
+    height: $height-main-slider;
+  }
+
+  &__img3 {
+    @include mainSlider();
+    background-image: url(../img/cabidge.webp);
+    height: $height-main-slider;
+  }
+
+  &__img4 {
+    @include mainSlider();
+    background-image: url(../img/peaches.webp);
+    height: $height-main-slider;
+  }
+}
+
+.info {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  z-index: 2;
+
+  &__title {
+    font-family: MuseoW01-700, Helvetica, sans-serif;
+    font-size: 6.625rem;
+    color: $color-text-slider;
+  }
+  &__short-title {
+    font-family: MuseoW01-700, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: $color-text-slider;
+  }
+  &__btn {
+    width: 142px;
+    height: 40px;
+    background-color: $color-menu-mobile;
+    color: $header-bg-color;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $click-text-color;
+    }
+  }
+}
+
+.dot-main.active {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+.dot-main {
+  width: 10px;
+  height: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+@media screen and (max-width: 767px) {
+  .slideshow {
+    &__img1 {
+      height: $height-main-slider-mobile;
+    }
+    &__img2 {
+      height: $height-main-slider-mobile;
+    }
+    &__img3 {
+      height: $height-main-slider-mobile;
+    }
+    &__img4 {
+      height: $height-main-slider-mobile;
+    }
+  }
+
+  .info {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    z-index: 2;
+
+    &__title {
+      font-family: MuseoW01-700, Helvetica, sans-serif;
+      font-size: 2rem;
+      color: $color-text-slider;
+    }
+    &__short-title {
+      font-family: MuseoW01-700, Helvetica, sans-serif;
+      font-size: 1.3rem;
+      color: $color-text-slider;
+    }
+    &__btn {
+      width: 111px;
+      height: 35px;
+      background-color: $color-menu-mobile;
+      color: $header-bg-color;
+      border: none;
+      margin-top: 20px;
+    }
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}

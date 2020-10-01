@@ -1,0 +1,139 @@
+@import "./variables";
+@import "./mixins";
+
+.login-bar.is-active {
+  display: block;
+  justify-content: center;
+  list-style: none;
+  background-color: #fff;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 8;
+  top: 0;
+  min-width: 360px;
+  transform: translateX(0);
+  transform-origin: top;
+  transition: transform 200ms;
+  transition-delay: 100ms;
+  right: 0;
+  overflow-y: auto;
+}
+
+.login-bar {
+  &_relative {
+    position: relative;
+    height: 100%;
+  }
+  &__wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 405px;
+    height: 490px;
+    text-align: center;
+  }
+  &__or {
+    width: 320px;
+    text-align: center;
+    margin: 0 auto 40px;
+    height: 10px;
+    border-bottom: 1px solid gray;
+    & span {
+      padding: 0 13px;
+      background-color: #fff;
+      color: #414141;
+    }
+  }
+  &__button-email {
+    width: 100%;
+    max-width: 316px;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid gray;
+    position: relative;
+    margin-bottom: 24px;
+    color: #414141;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  &__close {
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.login-bar {
+  display: none;
+  position: absolute;
+}
+
+.button-container {
+  &__facebook {
+    width: 100%;
+    max-width: 316px;
+    height: 48px;
+    background-color: #3b5998;
+    border: none;
+    position: relative;
+    margin-bottom: 24px;
+  }
+  &__icon-fb {
+    width: 28px;
+    height: 28px;
+  }
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  &__google {
+    width: 100%;
+    max-width: 316px;
+    height: 48px;
+    background-color: #4285f4;
+    border: none;
+    position: relative;
+    margin-bottom: 24px;
+  }
+  &__icon-ggl {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.title-log-container {
+  &__title {
+    font-family: MuseoW01-700, Helvetica, sans-serif;
+    font-size: 42px;
+    color: #414141;
+    font-weight: 100;
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    font-size: 18px;
+    color: #414141;
+    margin-bottom: 20px;
+  }
+  &__enter {
+    text-decoration: none;
+    color: #fe8340;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .title-log-container {
+    &__title {
+      font-size: 35px;
+    }
+  }
+}

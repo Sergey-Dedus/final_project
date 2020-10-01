@@ -1,0 +1,98 @@
+@import "./variables";
+@import "./mixins";
+
+.logo-container {
+  width: 100%;
+  max-width: 1000px;
+  height: 375px;
+  margin: 0 auto;
+  padding-top: 80px;
+  &__title-wrapper {
+    margin-left: 20px;
+  }
+  &__title {
+    @include allTitle();
+    padding-bottom: 20px;
+    position: relative;
+
+    &::before {
+      padding-left: 20px;
+      border-bottom: 1px solid #293e31;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 65px;
+      content: "";
+    }
+  }
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  &__col {
+    height: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__col-1 {
+    width: 25%;
+  }
+}
+
+.logo1 {
+  width: 200px;
+  height: 200px;
+}
+.logo2 {
+  width: 135px;
+  height: 135px;
+}
+.logo3 {
+  width: 200px;
+  height: 200px;
+}
+.logo4 {
+  width: 175px;
+  height: 175px;
+}
+
+.img-contact {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .logo-container {
+    padding-top: 20px;
+    &__col-1 {
+      width: 50%;
+    }
+    &__col {
+      height: 140px;
+    }
+    &__title {
+      font-size: 21px;
+    }
+  }
+  .logo1 {
+    width: 140px;
+    height: 140px;
+  }
+  .logo2 {
+    width: 114px;
+    height: 114px;
+  }
+  .logo3 {
+    width: 140px;
+    height: 140px;
+  }
+  .logo4 {
+    width: 137px;
+    height: 137px;
+  }
+}

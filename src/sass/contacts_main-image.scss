@@ -1,0 +1,19 @@
+@import "./variables";
+@import "./mixins";
+
+.page-main {
+  &__main-image-contacts {
+    background-image: url(../img/contacts_main-image.webp);
+    @include mainSlider();
+    background-position: 50% 70%;
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page-main {
+    &__main-image-contacts {
+      height: 60vh;
+    }
+  }
+}

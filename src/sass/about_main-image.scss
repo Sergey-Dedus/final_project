@@ -1,0 +1,18 @@
+@import "./variables";
+@import "./mixins";
+
+.page-main {
+  &__main-image {
+    background-image: url(../img/about_main.webp);
+    @include mainSlider();
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page-main {
+    &__main-image {
+      height: 60vh;
+    }
+  }
+}

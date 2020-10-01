@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Deerfield Farm</title>
+    <link rel="stylesheet" href="./build/main.css" />
+</head>
+
+<body>
+    <!-- HEADER-container -->
+    <header>
+        <!-- LOG IN BAR -->
+        <div class="login-bar">
+            <div class="login-bar_relative">
+                <div class="login-bar__wrapper">
+                    <div class="login-bar__title-log-container title-log-container">
+                        <h1 class="title-log-container__title">Зарегистрироваться</h1>
+                        <h2 class="title-log-container__subtitle">Уже есть аккаунт? <a class="title-log-container__enter"
+                                href="#">Войти</a></h2>
+                    </div>
+                    <div class="login-bar__button-container button-container">
+                        <form
+                            action="http://www.facebook.com/v2.11/dialog/oauth?app_id=309042052760104&auth_type=rerequest&cbt=1601359537644&channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df10db7f3c8243b4%26domain%3Dusers.wix.com%26origin%3Dhttps%253A%252F%252Fusers.wix.com%252Ff18ad5056115ae8%26relation%3Dopener&client_id=309042052760104&display=popup&domain=users.wix.com&e2e=%7B%7D&fallback_redirect_uri=https%3A%2F%2Fusers.wix.com%2Fwix-sm%2Fview%2Fsocial%2Fframe%2F24bcb47f-640a-40e7-a787-f069de64a243%3Fmode%3Dsignup%26lang%3Dru%26vendors%3Dgoogle%252Cfacebook%26extraCss%3Dsvg-style%26visitorId%3D818b2504-f7be-4525-b14b-430ae752575e%26collectionId%3D9bf9ddcb-bfa9-468b-ad26-11de13a342a7%26svSession%3Dundefined%26useGoogleSdk%3Dundefined%23privacyStatus%3DPUBLIC&locale=ru_RU&logger_id=ff7eb3f393f124&origin=1&redirect_uri=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2510e9a3f24294%26domain%3Dusers.wix.com%26origin%3Dhttps%253A%252F%252Fusers.wix.com%252Ff18ad5056115ae8%26relation%3Dopener%26frame%3Df3b97616c044b18&response_type=token%2Csigned_request%2Cgraph_domain&scope=public_profile%2Cemail&sdk=joey&version=v2.11"
+                            target="_blank">
+                            <button class="button-container__facebook">
+                                <div class="button-container__icon-fb">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 266.89 266.89" width="100%"
+                                        height="100%">
+                                        <g>
+                                            <g>
+                                                <path style="fill:#fff;"
+                                                    d="M252.16,0H14.73A14.73,14.73,0,0,0,0,14.73V252.16a14.73,14.73,0,0,0,14.73,14.73H142.55V163.57H107.77V123.29h34.82V93.58c0-34.47,21.06-53.24,51.81-53.24a285.41,285.41,0,0,1,31.08,1.59v36H204.15c-16.76,0-20,8-20,19.61v25.72H224l-5.16,40.28H184.15V266.89h68a14.73,14.73,0,0,0,14.73-14.73V14.73A14.73,14.73,0,0,0,252.16,0Z">
+                                                </path>
+                                                <path style="fill:#3b5998;"
+                                                    d="M218.84,163.54,224,123.26H184.15V97.54c0-11.66,3.24-19.61,20-19.61h21.33v-36a285.41,285.41,0,0,0-31.08-1.59c-30.75,0-51.81,18.77-51.81,53.24v29.71H107.77v40.28h34.78V266.89h41.6V163.54Z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="button-container__text"><span>Войти через Facebook</span></div>
+                            </button>
+                        </form>
+                        <!-- === -->
+                        <form
+                            action="https://users.wix.com/wix-sm/api/oauth2/getAuthorizationCode?mode=signup&lang=ru&visitorId=818b2504-f7be-4525-b14b-430ae752575e&collectionId=9bf9ddcb-bfa9-468b-ad26-11de13a342a7&svSession=undefined&privacyStatus=PUBLIC&provider=google"
+                            target="_blank">
+                            <button class="button-container__google">
+                                <div class="button-container__icon-ggl">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="0 0 28 28">
+                                        <defs>
+                                            <clipPath id="clip-path">
+                                                <path style="fill:none;"
+                                                    d="M22.79,12.36H14.21v3.48h4.94c-.46,2.21-2.39,3.48-4.94,3.48A5.32,5.32,0,1,1,17.6,9.87l2.68-2.62A9.29,9.29,0,0,0,14.21,5,9.08,9.08,0,0,0,5,14a9.08,9.08,0,0,0,9.21,9A8.59,8.59,0,0,0,23,14,7.31,7.31,0,0,0,22.79,12.36Z">
+                                                </path>
+                                            </clipPath>
+                                        </defs>
+                                        <g>
+                                            <path style="fill:#fff;"
+                                                d="M26.45,0H1.55A1.55,1.55,0,0,0,0,1.55V26.45A1.55,1.55,0,0,0,1.55,28H26.45A1.55,1.55,0,0,0,28,26.45V1.55A1.55,1.55,0,0,0,26.45,0Z">
+                                            </path>
+                                            <g style="clip-path:url(#clip-path);">
+                                                <path style="fill:#fbbc05;" d="M4.16,19.32V8.68L11.28,14Z"></path>
+                                            </g>
+                                            <g style="clip-path:url(#clip-path);">
+                                                <path style="fill:#ea4335;" d="M4.16,8.68,11.28,14l2.93-2.5,10-1.6V4.18H4.16Z">
+                                                </path>
+                                            </g>
+                                            <g style="clip-path:url(#clip-path);">
+                                                <path style="fill:#34a853;"
+                                                    d="M4.16,19.32,16.72,9.91l3.31.41,4.23-6.14V23.82H4.16Z"></path>
+                                            </g>
+                                            <g style="clip-path:url(#clip-path);">
+                                                <path style="fill:#4285f4;" d="M24.26,23.82,11.28,14,9.6,12.77,24.26,8.68Z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="button-container__text"><span>Войти через Google+</span></div>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="login-bar__or"><span>ИЛИ</span></div>
+                    <button class="login-bar__button-email">Через эл. почту</button>
+                    <div class="login-bar__checkbox">
+                        <label data-testid="signUp.communityLabel"><input name="isGoing" type="checkbox"
+                                checked="">Присоединиться к сообществу
+                            сайта.
+                        </label>
+                    </div>
+                </div>
+                <button class="login-bar__close">
+                    <svg width="30" height="30" viewBox="0 0 24 24">
+                        <defs>
+                            <filter id="close_svg__a" width="136.7%" height="135.5%" x="-18.3%" y="-17.8%"
+                                filterUnits="objectBoundingBox">
+                                <feMorphology in="SourceAlpha" operator="dilate" radius="9" result="shadowSpreadOuter1">
+                                </feMorphology>
+                                <feOffset dx="2" dy="12" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="14">
+                                </feGaussianBlur>
+                                <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+                                <feMerge>
+                                    <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <g fill-rule="evenodd" filter="url(#close_svg__a)" transform="translate(-421 -24)">
+                            <path
+                                d="M439.77 28l1.23 1.23-6.77 6.77 6.77 6.77-1.23 1.23-6.77-6.77-6.77 6.77-1.23-1.23 6.769-6.77L425 29.23l1.23-1.23 6.77 6.769L439.77 28z">
+                            </path>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- End LOG IN BAR -->
+        <div class="page-header">
+            <!-- logo-container -->
+            <div class="page-header__logo logo">
+                <a href="./index.html" class="logo__main-button">
+                    <div class="logo__main-button__wrapper">
+                        <h2>Deerfierd Farm</h2>
+                        <h3>Season's Best</h3>
+                    </div>
+                </a>
+            </div>
+            <!-- menu-container -->
+            <div class="page-header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__title">
+                        <a href="./index.html" class="menu__link">Home</a>
+                    </li>
+                    <li class="menu__title">
+                        <a href="./about.html" class="menu__link">About</a>
+                    </li>
+                    <li class="menu__title">
+                        <a href="./our-products.html" class="menu__link">Our Products</a>
+                    </li>
+                    <li class="menu__title">
+                        <a href="./blog.html" class="menu__link">Blog</a>
+                    </li>
+                    <li class="menu__title">
+                        <a href="./contact.html" class="menu__link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- join-us container -->
+            <button class="page-header__join join">
+                <div>
+                    <svg preserveAspectRatio="xMidYMid meet" id="comp-jryrhwv4svgcontent"
+                        data-bbox="32.751 39.154 134.5 122.5" viewBox="32.751 39.154 134.5 122.5" height="57" width="62"
+                        xmlns="http://www.w3.org/2000/svg" data-type="color" role="img">
+                        <g>
+                            <path
+                                d="M143.569 142.553c-.065 0-.131-.005-.196-.016l-42.407-6.742a1.25 1.25 0 1 1 .393-2.469l41.729 6.634 15.979-18.099-83.827-17.538a1.25 1.25 0 0 1 .511-2.447l85.931 17.978a1.25 1.25 0 0 1 .681 2.051l-17.856 20.225c-.24.271-.583.423-.938.423z"
+                                fill="#293e31" data-color="1"></path>
+                            <path
+                                d="M94.465 152.665a1.25 1.25 0 0 1-1.247-1.317l2.096-39.044a1.238 1.238 0 0 1 1.315-1.181 1.25 1.25 0 0 1 1.181 1.315l-1.907 35.521 7.648-8.471a1.25 1.25 0 0 1 1.856 1.676l-10.014 11.09a1.252 1.252 0 0 1-.928.411z"
+                                fill="#293e31" data-color="1"></path>
+                            <path
+                                d="M58.754 157.16H54.29a1.25 1.25 0 0 1-1.236-1.061l-5.675-37.145c-2.249 10.522-6.347 30.575-6.347 36.956 0 .69-.56 1.25-1.25 1.25h-5.58a1.25 1.25 0 0 1-1.247-1.333l3.05-46.067a1.25 1.25 0 0 1 2.495.165l-2.962 44.735h3.032c.576-10.518 7.498-41.476 7.804-42.844.132-.586.672-1.009 1.263-.976a1.25 1.25 0 0 1 1.193 1.06l6.534 42.759h2.167l.975-44.148c.015-.69.584-1.273 1.277-1.222a1.25 1.25 0 0 1 1.222 1.277l-1.001 45.372a1.25 1.25 0 0 1-1.25 1.222z"
+                                fill="#293e31" data-color="1"></path>
+                            <path
+                                d="M121.807 161.654c-5.919 0-10.735-4.845-10.735-10.8 0-5.956 4.816-10.801 10.735-10.801 5.92 0 10.736 4.845 10.736 10.801 0 5.955-4.816 10.8-10.736 10.8zm0-19.101c-4.541 0-8.235 3.724-8.235 8.301s3.694 8.3 8.235 8.3 8.236-3.724 8.236-8.3c0-4.577-3.695-8.301-8.236-8.301z"
+                                fill="#293e31" data-color="1"></path>
+                            <path
+                                d="M60.286 106.48l-.048-.001-26.285-.995a1.25 1.25 0 0 1-1.189-1.43c.242-1.647 6.145-40.352 24.797-41.526.328-.021.647.087.896.301l7.812 6.742c.241.208.394.5.426.817l1.64 15.804 9.271 8.964a1.25 1.25 0 0 1 .042 1.755l-3.888 4.134a1.25 1.25 0 0 1-1.7.113l-12.977-10.57a1.25 1.25 0 0 1-.45-.805l-2.232-16.854a1.25 1.25 0 0 1 2.478-.328l2.167 16.362 11.689 9.522 2.246-2.389-8.711-8.423a1.25 1.25 0 0 1-.375-.77l-1.636-15.764-7.038-6.074c-14.464 1.566-20.546 31.183-21.753 37.975l24.865.941a1.25 1.25 0 0 1-.047 2.499z"
+                                fill="#293e31" data-color="1"></path>
+                            <path
+                                d="M69.094 106.48c-.246 0-.489-.073-.697-.212L53.115 96.011a1.253 1.253 0 0 1-.525-.773l-2.869-13.22a1.25 1.25 0 0 1 2.444-.53l2.762 12.728 13.731 9.216.782-1.42a1.25 1.25 0 0 1 2.19 1.206l-1.44 2.616a1.25 1.25 0 0 1-1.096.646z"
+                                fill="#293e31" data-color="1"></path>
+                            <path
+                                d="M67.606 66.602c-1.538 0-2.653-.553-2.722-.588-7.568-3.81-4.119-14.535-3.968-14.99a1.25 1.25 0 0 1 2.374.785c-.03.091-2.923 9.133 2.723 11.975.057.028 1.537.728 3.138-.021 1.678-.786 3-2.955 3.825-6.274a1.25 1.25 0 1 1 2.427.603c-1.035 4.165-2.799 6.843-5.244 7.959a6.138 6.138 0 0 1-2.553.551z"
+                                fill="#293e31" data-color="1"></path>
+                            <path
+                                d="M83.926 60.413c-.215 0-.433-.055-.632-.172L56.51 44.51a1.25 1.25 0 1 1 1.265-2.155l26.784 15.73a1.25 1.25 0 0 1-.633 2.328z"
+                                fill="#293e31" data-color="1"></path>
+                            <path
+                                d="M77.67 51.83a1.25 1.25 0 0 1-1.249-1.211l-.162-5.155-4.535-3.58-5.948 3.067a1.249 1.249 0 1 1-1.146-2.222l6.663-3.436a1.248 1.248 0 0 1 1.347.13l5.623 4.439c.29.229.463.573.475.942l.18 5.736a1.25 1.25 0 0 1-1.21 1.289l-.038.001z"
+                                fill="#293e31" data-color="1"></path>
+                            <path
+                                d="M154.992 115.906c-.68 0-1.237-.545-1.25-1.228-.066-3.69-1.046-6.33-2.913-7.848-2.479-2.014-5.733-1.426-5.765-1.421a1.249 1.249 0 0 1-1.355-.678c-3.911-7.972-8.757-12.325-14.406-12.938-11.283-1.234-22.456 12.621-22.567 12.761a1.249 1.249 0 1 1-1.956-1.556c.49-.616 12.151-15.062 24.793-13.69 6.359.691 11.735 5.244 15.988 13.54 1.479-.087 4.397.053 6.845 2.043 2.464 2.004 3.754 5.281 3.835 9.742a1.25 1.25 0 0 1-1.228 1.272l-.021.001z"
+                                fill="#293e31" data-color="1"></path>
+                            <path
+                                d="M145.874 131.043a1.25 1.25 0 0 1-.978-2.027l4.464-5.618a1.25 1.25 0 1 1 1.957 1.555l-4.464 5.618a1.244 1.244 0 0 1-.979.472z"
+                                fill="#293e31" data-color="1"></path>
+                            <path
+                                d="M146.743 100.172c-.462 0-1.057-.228-1.712-1.039-2.283-2.829-6.117-13.499 1.719-22.855a1.2 1.2 0 0 1 .983-.447c.378.008.733.186.964.485.269.348 6.577 8.611 4.964 16.04-.709 3.265-2.811 5.838-6.249 7.648a1.438 1.438 0 0 1-.669.168zm.913-20.973c-3.066 4.371-3.344 8.746-2.987 11.764.375 3.173 1.541 5.576 2.206 6.479 2.411-1.426 3.834-3.269 4.344-5.617 1.023-4.712-1.965-10.149-3.563-12.626z"
+                                fill="#293e31" data-color="1"></path>
+                            <path
+                                d="M166.001 103.643a1.25 1.25 0 0 1-1.11-.674c-1.575-3.031-10.106-1.827-15.114-.355a1.25 1.25 0 0 1-.706-2.399c1.527-.449 15.011-4.225 18.039 1.601a1.25 1.25 0 0 1-1.109 1.827z"
+                                fill="#293e31" data-color="1"></path>
+                        </g>
+                    </svg>
+                </div>
+                <span class="join__text">JOIN US</span>
+            </button>
+            <!-- log-in container -->
+            <div class="page-header__log-in log-in">
+                <div>
+                    <a href="#" class="log-in__link-swg"><svg class="log-in__icon" preserveAspectRatio="xMidYMid meet"
+                            id="comp-k484yr9vsvgcontent" data-bbox="0 0 50 50" data-type="shape"
+                            xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" role="img">
+                            <g>
+                                <path
+                                    d="M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0">
+                                </path>
+                            </g>
+                        </svg></a>
+                </div>
+                <a href="#" class="log-in__link">Log In</a>
+            </div>
+        </div>
+
+        <!-- MOBILE VIEW -->
+
+        <div class="page-header-mobile">
+            <div class="page-header-mobile__wrapper">
+                <!-- join-us container -->
+                <button class="page-header-mobile__join join-mobile">
+                    <div>
+                        <svg preserveAspectRatio="xMidYMid meet" id="comp-jryrhwv4svgcontent"
+                            data-bbox="32.751 39.154 134.5 122.5" viewBox="32.751 39.154 134.5 122.5" height="57"
+                            width="62" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img">
+                            <g>
+                                <path
+                                    d="M143.569 142.553c-.065 0-.131-.005-.196-.016l-42.407-6.742a1.25 1.25 0 1 1 .393-2.469l41.729 6.634 15.979-18.099-83.827-17.538a1.25 1.25 0 0 1 .511-2.447l85.931 17.978a1.25 1.25 0 0 1 .681 2.051l-17.856 20.225c-.24.271-.583.423-.938.423z"
+                                    fill="#293e31" data-color="1"></path>
+                                <path
+                                    d="M94.465 152.665a1.25 1.25 0 0 1-1.247-1.317l2.096-39.044a1.238 1.238 0 0 1 1.315-1.181 1.25 1.25 0 0 1 1.181 1.315l-1.907 35.521 7.648-8.471a1.25 1.25 0 0 1 1.856 1.676l-10.014 11.09a1.252 1.252 0 0 1-.928.411z"
+                                    fill="#293e31" data-color="1"></path>
+                                <path
+                                    d="M58.754 157.16H54.29a1.25 1.25 0 0 1-1.236-1.061l-5.675-37.145c-2.249 10.522-6.347 30.575-6.347 36.956 0 .69-.56 1.25-1.25 1.25h-5.58a1.25 1.25 0 0 1-1.247-1.333l3.05-46.067a1.25 1.25 0 0 1 2.495.165l-2.962 44.735h3.032c.576-10.518 7.498-41.476 7.804-42.844.132-.586.672-1.009 1.263-.976a1.25 1.25 0 0 1 1.193 1.06l6.534 42.759h2.167l.975-44.148c.015-.69.584-1.273 1.277-1.222a1.25 1.25 0 0 1 1.222 1.277l-1.001 45.372a1.25 1.25 0 0 1-1.25 1.222z"
+                                    fill="#293e31" data-color="1"></path>
+                                <path
+                                    d="M121.807 161.654c-5.919 0-10.735-4.845-10.735-10.8 0-5.956 4.816-10.801 10.735-10.801 5.92 0 10.736 4.845 10.736 10.801 0 5.955-4.816 10.8-10.736 10.8zm0-19.101c-4.541 0-8.235 3.724-8.235 8.301s3.694 8.3 8.235 8.3 8.236-3.724 8.236-8.3c0-4.577-3.695-8.301-8.236-8.301z"
+                                    fill="#293e31" data-color="1"></path>
+                                <path
+                                    d="M60.286 106.48l-.048-.001-26.285-.995a1.25 1.25 0 0 1-1.189-1.43c.242-1.647 6.145-40.352 24.797-41.526.328-.021.647.087.896.301l7.812 6.742c.241.208.394.5.426.817l1.64 15.804 9.271 8.964a1.25 1.25 0 0 1 .042 1.755l-3.888 4.134a1.25 1.25 0 0 1-1.7.113l-12.977-10.57a1.25 1.25 0 0 1-.45-.805l-2.232-16.854a1.25 1.25 0 0 1 2.478-.328l2.167 16.362 11.689 9.522 2.246-2.389-8.711-8.423a1.25 1.25 0 0 1-.375-.77l-1.636-15.764-7.038-6.074c-14.464 1.566-20.546 31.183-21.753 37.975l24.865.941a1.25 1.25 0 0 1-.047 2.499z"
+                                    fill="#293e31" data-color="1"></path>
+                                <path
+                                    d="M69.094 106.48c-.246 0-.489-.073-.697-.212L53.115 96.011a1.253 1.253 0 0 1-.525-.773l-2.869-13.22a1.25 1.25 0 0 1 2.444-.53l2.762 12.728 13.731 9.216.782-1.42a1.25 1.25 0 0 1 2.19 1.206l-1.44 2.616a1.25 1.25 0 0 1-1.096.646z"
+                                    fill="#293e31" data-color="1"></path>
+                                <path
+                                    d="M67.606 66.602c-1.538 0-2.653-.553-2.722-.588-7.568-3.81-4.119-14.535-3.968-14.99a1.25 1.25 0 0 1 2.374.785c-.03.091-2.923 9.133 2.723 11.975.057.028 1.537.728 3.138-.021 1.678-.786 3-2.955 3.825-6.274a1.25 1.25 0 1 1 2.427.603c-1.035 4.165-2.799 6.843-5.244 7.959a6.138 6.138 0 0 1-2.553.551z"
+                                    fill="#293e31" data-color="1"></path>
+                                <path
+                                    d="M83.926 60.413c-.215 0-.433-.055-.632-.172L56.51 44.51a1.25 1.25 0 1 1 1.265-2.155l26.784 15.73a1.25 1.25 0 0 1-.633 2.328z"
+                                    fill="#293e31" data-color="1"></path>
+                                <path
+                                    d="M77.67 51.83a1.25 1.25 0 0 1-1.249-1.211l-.162-5.155-4.535-3.58-5.948 3.067a1.249 1.249 0 1 1-1.146-2.222l6.663-3.436a1.248 1.248 0 0 1 1.347.13l5.623 4.439c.29.229.463.573.475.942l.18 5.736a1.25 1.25 0 0 1-1.21 1.289l-.038.001z"
+                                    fill="#293e31" data-color="1"></path>
+                                <path
+                                    d="M154.992 115.906c-.68 0-1.237-.545-1.25-1.228-.066-3.69-1.046-6.33-2.913-7.848-2.479-2.014-5.733-1.426-5.765-1.421a1.249 1.249 0 0 1-1.355-.678c-3.911-7.972-8.757-12.325-14.406-12.938-11.283-1.234-22.456 12.621-22.567 12.761a1.249 1.249 0 1 1-1.956-1.556c.49-.616 12.151-15.062 24.793-13.69 6.359.691 11.735 5.244 15.988 13.54 1.479-.087 4.397.053 6.845 2.043 2.464 2.004 3.754 5.281 3.835 9.742a1.25 1.25 0 0 1-1.228 1.272l-.021.001z"
+                                    fill="#293e31" data-color="1"></path>
+                                <path
+                                    d="M145.874 131.043a1.25 1.25 0 0 1-.978-2.027l4.464-5.618a1.25 1.25 0 1 1 1.957 1.555l-4.464 5.618a1.244 1.244 0 0 1-.979.472z"
+                                    fill="#293e31" data-color="1"></path>
+                                <path
+                                    d="M146.743 100.172c-.462 0-1.057-.228-1.712-1.039-2.283-2.829-6.117-13.499 1.719-22.855a1.2 1.2 0 0 1 .983-.447c.378.008.733.186.964.485.269.348 6.577 8.611 4.964 16.04-.709 3.265-2.811 5.838-6.249 7.648a1.438 1.438 0 0 1-.669.168zm.913-20.973c-3.066 4.371-3.344 8.746-2.987 11.764.375 3.173 1.541 5.576 2.206 6.479 2.411-1.426 3.834-3.269 4.344-5.617 1.023-4.712-1.965-10.149-3.563-12.626z"
+                                    fill="#293e31" data-color="1"></path>
+                                <path
+                                    d="M166.001 103.643a1.25 1.25 0 0 1-1.11-.674c-1.575-3.031-10.106-1.827-15.114-.355a1.25 1.25 0 0 1-.706-2.399c1.527-.449 15.011-4.225 18.039 1.601a1.25 1.25 0 0 1-1.109 1.827z"
+                                    fill="#293e31" data-color="1"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <span class="join__text">JOIN US</span>
+                </button>
+                <!-- logo-container -->
+                <div class="page-header-mobile__logo logo">
+                    <a href="./index.html" class="logo__main-button">
+                        <div class="logo__main-button__wrapper">
+                            <h2>Deerfierd Farm</h2>
+                            <h3>Season's Best</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- menu-container -->
+                <button class="page-header-mobil__menu-mobile menu-mobile">
+                    <div class="menu-mobile_middle-line"></div>
+                </button>
+            </div>
+            <!-- menu-container-mobile -->
+            <div class="page-header__menu menu">
+                <ul class="menu__list2">
+                    <div class="menu__wrapper">
+                        <!-- log-in container - mobile -->
+                        <div class="page-header__log-in log-in log-mobile">
+                            <div>
+                                <a href="#" class="log-in__link-swg"><svg class="log-in__icon"
+                                        preserveAspectRatio="xMidYMid meet" id="comp-k484yr9vsvgcontent"
+                                        data-bbox="0 0 50 50" data-type="shape" xmlns="http://www.w3.org/2000/svg"
+                                        width="50" height="50" viewBox="0 0 50 50" role="img">
+                                        <g>
+                                            <path
+                                                d="M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0">
+                                            </path>
+                                        </g>
+                                    </svg></a>
+                            </div>
+                            <a href="#" class="log-in__link">Log In</a>
+                        </div>
+
+                        <li class="menu__title">
+                            <a href="./index.html" class="menu__link">Home</a>
+                        </li>
+                        <li class="menu__title">
+                            <a href="./about.html" class="menu__link">About</a>
+                        </li>
+                        <li class="menu__title">
+                            <a href="./our-products.html" class="menu__link">Our Products</a>
+                        </li>
+                        <li class="menu__title">
+                            <a href="./blog.html" class="menu__link">Blog</a>
+                        </li>
+                        <li class="menu__title">
+                            <a href="./contact.html" class="menu__link">Contact Us</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <!-- JOIN US BAR -->
+        <div class="join-bar">
+            <button class="close-join" title="Back to site">
+                <svg preserveAspectRatio="xMidYMid meet" data-bbox="25.975 25.975 148.05 148.05"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="25.975 25.975 148.05 148.05" role="img" width="31px"
+                    height="31px">
+                    <g>
+                        <path
+                            d="M172.9 167.6L105.3 100l67.6-67.6c1.5-1.5 1.5-3.8 0-5.3s-3.8-1.5-5.3 0L100 94.7 32.4 27.1c-1.5-1.5-3.8-1.5-5.3 0s-1.5 3.8 0 5.3L94.7 100l-67.6 67.6c-1.5 1.5-1.5 3.8 0 5.3s3.8 1.5 5.3 0l67.6-67.6 67.6 67.6c1.5 1.5 3.8 1.5 5.3 0s1.5-3.8 0-5.3z">
+                        </path>
+                    </g>
+                </svg>
+            </button>
+            <form action="" class="join-bar__form-list form-list">
+                <h2 class="form-list__title">
+                    Join Our Farn CSA <br />
+                    Program
+                </h2>
+                <div class="form-icon_wrapper">
+                    <svg class="form-icon" preserveAspectRatio="xMidYMid meet" data-bbox="32.751 39.154 134.5 122.5"
+                        viewBox="32.751 39.154 134.5 122.5" height="116" width="126" xmlns="http://www.w3.org/2000/svg"
+                        data-type="color" role="img" aria-labelledby="comp-jrumhvlp-svgtitle">
+                        <defs>
+                            <style>
+                                #comp-jrumhvlp svg [data-color="1"] {
+                                    fill: #fe8340;
+                                }
+                            </style>
+                        </defs>
+                        <title id="comp-jrumhvlp-svgtitle">Farmer Illustration</title>
+                        <g>
+                            <path
+                                d="M143.569 142.553c-.065 0-.131-.005-.196-.016l-42.407-6.742a1.25 1.25 0 1 1 .393-2.469l41.729 6.634 15.979-18.099-83.827-17.538a1.25 1.25 0 0 1 .511-2.447l85.931 17.978a1.25 1.25 0 0 1 .681 2.051l-17.856 20.225c-.24.271-.583.423-.938.423z"
+                                fill="#FE6340" data-color="1"></path>
+                            <path
+                                d="M94.465 152.665a1.25 1.25 0 0 1-1.247-1.317l2.096-39.044a1.238 1.238 0 0 1 1.315-1.181 1.25 1.25 0 0 1 1.181 1.315l-1.907 35.521 7.648-8.471a1.25 1.25 0 0 1 1.856 1.676l-10.014 11.09a1.252 1.252 0 0 1-.928.411z"
+                                fill="#FE6340" data-color="1"></path>
+                            <path
+                                d="M58.754 157.16H54.29a1.25 1.25 0 0 1-1.236-1.061l-5.675-37.145c-2.249 10.522-6.347 30.575-6.347 36.956 0 .69-.56 1.25-1.25 1.25h-5.58a1.25 1.25 0 0 1-1.247-1.333l3.05-46.067a1.25 1.25 0 0 1 2.495.165l-2.962 44.735h3.032c.576-10.518 7.498-41.476 7.804-42.844.132-.586.672-1.009 1.263-.976a1.25 1.25 0 0 1 1.193 1.06l6.534 42.759h2.167l.975-44.148c.015-.69.584-1.273 1.277-1.222a1.25 1.25 0 0 1 1.222 1.277l-1.001 45.372a1.25 1.25 0 0 1-1.25 1.222z"
+                                fill="#FE6340" data-color="1"></path>
+                            <path
+                                d="M121.807 161.654c-5.919 0-10.735-4.845-10.735-10.8 0-5.956 4.816-10.801 10.735-10.801 5.92 0 10.736 4.845 10.736 10.801 0 5.955-4.816 10.8-10.736 10.8zm0-19.101c-4.541 0-8.235 3.724-8.235 8.301s3.694 8.3 8.235 8.3 8.236-3.724 8.236-8.3c0-4.577-3.695-8.301-8.236-8.301z"
+                                fill="#FE6340" data-color="1"></path>
+                            <path
+                                d="M60.286 106.48l-.048-.001-26.285-.995a1.25 1.25 0 0 1-1.189-1.43c.242-1.647 6.145-40.352 24.797-41.526.328-.021.647.087.896.301l7.812 6.742c.241.208.394.5.426.817l1.64 15.804 9.271 8.964a1.25 1.25 0 0 1 .042 1.755l-3.888 4.134a1.25 1.25 0 0 1-1.7.113l-12.977-10.57a1.25 1.25 0 0 1-.45-.805l-2.232-16.854a1.25 1.25 0 0 1 2.478-.328l2.167 16.362 11.689 9.522 2.246-2.389-8.711-8.423a1.25 1.25 0 0 1-.375-.77l-1.636-15.764-7.038-6.074c-14.464 1.566-20.546 31.183-21.753 37.975l24.865.941a1.25 1.25 0 0 1-.047 2.499z"
+                                fill="#FE6340" data-color="1"></path>
+                            <path
+                                d="M69.094 106.48c-.246 0-.489-.073-.697-.212L53.115 96.011a1.253 1.253 0 0 1-.525-.773l-2.869-13.22a1.25 1.25 0 0 1 2.444-.53l2.762 12.728 13.731 9.216.782-1.42a1.25 1.25 0 0 1 2.19 1.206l-1.44 2.616a1.25 1.25 0 0 1-1.096.646z"
+                                fill="#FE6340" data-color="1"></path>
+                            <path
+                                d="M67.606 66.602c-1.538 0-2.653-.553-2.722-.588-7.568-3.81-4.119-14.535-3.968-14.99a1.25 1.25 0 0 1 2.374.785c-.03.091-2.923 9.133 2.723 11.975.057.028 1.537.728 3.138-.021 1.678-.786 3-2.955 3.825-6.274a1.25 1.25 0 1 1 2.427.603c-1.035 4.165-2.799 6.843-5.244 7.959a6.138 6.138 0 0 1-2.553.551z"
+                                fill="#FE6340" data-color="1"></path>
+                            <path
+                                d="M83.926 60.413c-.215 0-.433-.055-.632-.172L56.51 44.51a1.25 1.25 0 1 1 1.265-2.155l26.784 15.73a1.25 1.25 0 0 1-.633 2.328z"
+                                fill="#FE6340" data-color="1"></path>
+                            <path
+                                d="M77.67 51.83a1.25 1.25 0 0 1-1.249-1.211l-.162-5.155-4.535-3.58-5.948 3.067a1.249 1.249 0 1 1-1.146-2.222l6.663-3.436a1.248 1.248 0 0 1 1.347.13l5.623 4.439c.29.229.463.573.475.942l.18 5.736a1.25 1.25 0 0 1-1.21 1.289l-.038.001z"
+                                fill="#FE6340" data-color="1"></path>
+                            <path
+                                d="M154.992 115.906c-.68 0-1.237-.545-1.25-1.228-.066-3.69-1.046-6.33-2.913-7.848-2.479-2.014-5.733-1.426-5.765-1.421a1.249 1.249 0 0 1-1.355-.678c-3.911-7.972-8.757-12.325-14.406-12.938-11.283-1.234-22.456 12.621-22.567 12.761a1.249 1.249 0 1 1-1.956-1.556c.49-.616 12.151-15.062 24.793-13.69 6.359.691 11.735 5.244 15.988 13.54 1.479-.087 4.397.053 6.845 2.043 2.464 2.004 3.754 5.281 3.835 9.742a1.25 1.25 0 0 1-1.228 1.272l-.021.001z"
+                                fill="#FE6340" data-color="1"></path>
+                            <path
+                                d="M145.874 131.043a1.25 1.25 0 0 1-.978-2.027l4.464-5.618a1.25 1.25 0 1 1 1.957 1.555l-4.464 5.618a1.244 1.244 0 0 1-.979.472z"
+                                fill="#FE6340" data-color="1"></path>
+                            <path
+                                d="M146.743 100.172c-.462 0-1.057-.228-1.712-1.039-2.283-2.829-6.117-13.499 1.719-22.855a1.2 1.2 0 0 1 .983-.447c.378.008.733.186.964.485.269.348 6.577 8.611 4.964 16.04-.709 3.265-2.811 5.838-6.249 7.648a1.438 1.438 0 0 1-.669.168zm.913-20.973c-3.066 4.371-3.344 8.746-2.987 11.764.375 3.173 1.541 5.576 2.206 6.479 2.411-1.426 3.834-3.269 4.344-5.617 1.023-4.712-1.965-10.149-3.563-12.626z"
+                                fill="#FE6340" data-color="1"></path>
+                            <path
+                                d="M166.001 103.643a1.25 1.25 0 0 1-1.11-.674c-1.575-3.031-10.106-1.827-15.114-.355a1.25 1.25 0 0 1-.706-2.399c1.527-.449 15.011-4.225 18.039 1.601a1.25 1.25 0 0 1-1.109 1.827z"
+                                fill="#FE6340" data-color="1"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="form-list__grid grid">
+                    <div class="col col-1">
+                        <label class="form-text" for="">Enter Your First Name</label>
+                        <input class="form-input firstname" placeholder="First Name" type="text" value="" />
+                    </div>
+                    <div class="col col-1">
+                        <label class="form-text" for="">Enter Your Last Name</label>
+                        <input class="form-input lastname" placeholder="Last Name" type="text" value="" />
+                    </div>
+                    <div class="col col-1">
+                        <label class="form-text" for="">Enter Your Email*</label>
+                        <input class="form-input email" placeholder="Email" type="email" value="" />
+                    </div>
+                    <div class="col col-1">
+                        <label class="form-text" for="">Enter Your Phone</label>
+                        <input class="form-input phone" placeholder="Phone" type="phone" value="" />
+                    </div>
+                    <div class="col col-1">
+                        <label class="form-text" for="">Enter Your City</label>
+                        <input class="form-input city" placeholder="City" type="text" value="" />
+                    </div>
+                    <div class="col col-1">
+                        <label class="form-text" for="">Enter Your State</label>
+                        <input class="form-input state" placeholder="State" type="text" value="" />
+                    </div>
+                    <div class="col col-2 package">
+                        <h2 class="package__title">
+                            Choose the package that Fits your Family *
+                        </h2>
+                        <div class="radio-wrapper">
+                            <div class="radio">
+                                <input class="custom-radio custom-radio1" type="radio" id="package-1" name="package"
+                                    value="Weekly Share" />
+                                <label for="package-1" class="package__description">Weekly Share</label>
+                            </div>
+                            <div class="radio">
+                                <input class="custom-radio custom-radio2" type="radio" id="package-2" name="package"
+                                    value="Bi-Weekly Share" />
+                                <label for="package-2" class="package__description">Bi-Weekly Share</label>
+                            </div>
+                            <div class="radio">
+                                <input class="custom-radio custom-radio3" type="radio" id="package-3" name="package"
+                                    value="Wholesome Family Package" />
+                                <label for="package-3" class="package__description">Wholesome Family Package</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="form-list__btn">Submit</button>
+            </form>
+        </div>
+    </header>
+    <!-- MAIN-container -->
+    <main class="page-main">
+<section class="page-main__blog-title blog-title">
+    <div class="blog-title__wrapper">
+        <h2 class="blog-title__title">Our Blog</h2>
+        <div class="blog-title__filter-and-search">
+            <div class="blog-title__filter"><span>All Posts</span></div>
+            <div class="blog-title__search"></div>
+        </div>
+    </div>
+</section>
+<section class="page-main__blog-title-mobile blog-title-mobile">
+    <h2 class="blog-title-mobile__title">Our Blog</h2>
+    <div class="blog-title-mobile__blog"><h3>Blog</h3></div>
+    <div class="blog-title-mobile__filter"><h3>All Posts</h3></div>
+</section>
+<section class="page-main__main-blog-container main-blog-container">
+    <div class="main-blog-container__wrap">
+        <div class="main-blog-container__grid">
+            <!-- column1 -->
+            <div class="main-blog-container__col main-blog-container__col-1">
+                <div class="main-blog-container__col-wrapper">
+                    <div class="main-blog-container__image1"></div>
+                    <div class="main-blog-container__info">
+                        <div class="main-blog-container__publication-and-link">
+                        <div class="main-blog-container__publication publication">
+                            <div class="publication__info">
+                                <div class="publication__icon"></div>
+                                <!-- publication description -->
+                                <div class="publication__description">
+                                    <!-- author -->
+                                    <div class="publication__author author">
+                                        <span class="author__name">Ilya Lytvynov</span>
+                                        <div class="author__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" style="fill-rule:evenodd"
+                                            class="author__svg">
+                                            <path
+                                                d="M15.3812,6.495914 L12.6789333,8.77258837 C12.6191333,8.84477644 12.5099333,8.85722265 12.4354,8.79997005 C12.4215333,8.79001308 12.4094,8.77756686 12.3998667,8.76429089 L9.78686667,6.14327115 C9.67766667,5.99225704 9.46186667,5.95491839 9.305,6.05863687 C9.26946667,6.08186981 9.23913333,6.11091099 9.21573333,6.14493065 L6.60013333,8.81075677 C6.5464,8.88626383 6.43893333,8.90534803 6.3592,8.85390366 C6.34446667,8.84394669 6.33146667,8.83233022 6.32106667,8.81905425 L3.61966667,6.50587098 C3.5018,6.36149485 3.28426667,6.33577266 3.13346667,6.44861837 C3.0494,6.51167921 3,6.60792997 3,6.70998895 L4,14 L15,14 L16,6.70169148 C16,6.51831719 15.8448667,6.36979232 15.6533333,6.36979232 C15.5476,6.36979232 15.4470667,6.41625821 15.3812,6.495914 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    </div>
+                                    <!-- time -->
+                                    <div class="publication__time time">
+                                        <span class="time__date">Apr 8</span>
+                                        <span class="time__separator"></span>
+                                        <span class="time__read">1 min</span>
+                                    </div>
+                                </div>
+                                <!-- end publication description -->
+                            </div>
+                            <div class="publication__share share">
+                                <button class="share__btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"
+                                        class="blog-post-homepage-description-fill blog-post-homepage-link-hashtag-hover-fill">
+                                        <path
+                                            d="M2.44398805,5.99973295 C1.62345525,5.9690612 0.980075653,5.28418875 1.00047182,4.46312144 C1.02086799,3.64205413 1.69745853,2.98998831 2.51850166,3.0001164 C3.33954478,3.01024449 3.99985313,3.67880182 4,4.50012255 C3.98424812,5.34399206 3.28763905,6.0153508 2.44398805,5.99973295 L2.44398805,5.99973295 Z M2.44398805,10.9997329 C1.62345525,10.9690612 0.980075653,10.2841888 1.00047182,9.46312144 C1.02086799,8.64205413 1.69745853,7.98998831 2.51850166,8.0001164 C3.33954478,8.01024449 3.99985313,8.67880182 4,9.50012255 C3.98424812,10.3439921 3.28763905,11.0153508 2.44398805,10.9997329 L2.44398805,10.9997329 Z M2.44398805,15.9997329 C1.62345525,15.9690612 0.980075653,15.2841888 1.00047182,14.4631214 C1.02086799,13.6420541 1.69745853,12.9899883 2.51850166,13.0001164 C3.33954478,13.0102445 3.99985313,13.6788018 4,14.5001225 C3.98424812,15.3439921 3.28763905,16.0153508 2.44398805,15.9997329 L2.44398805,15.9997329 Z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="blog-mobile"><a class="main-blog-container__info-link" href="#">New in the
+                                Basket. Seasonal Additions</a>
+                            <p class="main-blog-container__test">Create a blog post subtitle that summarizes your post in a
+                                few short punchy sentences and...</p>
+                        </div>
+                        </div>
+                        <div class="test3">
+                            <div class="main-blog-container__info-wrapper">
+                                <div class="main-blog-container__icon-and-number">
+                                    <div class="main-blog-container__eyes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19"
+                                            role="img" aria-label="Views count" class="blog-icon-fill">
+                                            <title></title>
+                                            <path
+                                                d="M18.6514224,10.4604595 C17.3924224,11.9688254 13.9774224,15.4790227 9.46342244,15.5 L9.42442244,15.5 C6.26242244,15.5 3.20842244,13.7938483 0.345422443,10.4264963 C-0.115140814,9.88163847 -0.115140814,9.08439833 0.345422443,8.5395405 C1.60442244,7.03117456 5.01942244,3.52097727 9.53342244,3.5 L9.57342244,3.5 C12.7354224,3.5 15.7894224,5.20615167 18.6524224,8.5735037 C19.1122856,9.11875503 19.1118633,9.91569484 18.6514224,10.4604595 Z M17.8674224,9.2228003 C15.2084224,6.09518855 12.4194224,4.50990594 9.57442244,4.50990594 L9.54042244,4.50990594 C5.46142244,4.52888537 2.30642244,7.78335969 1.14042244,9.18084575 C0.991393136,9.3517953 0.988008897,9.60533857 1.13242244,9.78019645 C3.79142244,12.9078082 6.58142244,14.4920919 9.42542244,14.4920919 L9.46042244,14.4920919 C13.5394224,14.4741114 16.6934224,11.2196371 17.8604224,9.822151 C18.0095734,9.6511131 18.0125381,9.39726759 17.8674224,9.2228003 L17.8674224,9.2228003 Z M9.49942244,13.3932823 C7.35251405,13.3646853 5.63255349,11.6080263 5.65157552,9.46333471 C5.67059754,7.31864313 7.42144652,5.59270141 9.56852513,5.6021069 C11.7156037,5.61151239 13.4512316,7.35272696 13.4514224,9.49750271 C13.4349115,11.6625186 11.6668124,13.4054651 9.49942244,13.3932823 L9.49942244,13.3932823 Z M9.49942244,6.61762258 C7.91092198,6.63961751 6.63891624,7.93990193 6.65354481,9.52676854 C6.66817338,11.1136351 7.96393479,12.3902997 9.55257137,12.3830695 C11.1412079,12.3758393 12.4252698,11.0874333 12.4254224,9.50049946 C12.4127657,7.89797688 11.1037033,6.60820738 9.49942244,6.61762258 L9.49942244,6.61762258 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div><span>26</span></div>
+                                </div>
+                                <div class="main-blog-container__comment"><span>Write a comment</span></div>
+                                <button class="main-blog-container__like">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img">
+                                        <path
+                                            d="M9.44985848,15.5291774 C9.43911371,15.5362849 9.42782916,15.5449227 9.41715267,15.5553324 L9.44985848,15.5291774 Z M9.44985848,15.5291774 L9.49370677,15.4941118 C9.15422701,15.7147757 10.2318883,15.0314406 10.7297038,14.6971183 C11.5633567,14.1372547 12.3827081,13.5410755 13.1475707,12.9201001 C14.3829188,11.9171478 15.3570936,10.9445466 15.9707237,10.0482572 C16.0768097,9.89330422 16.1713564,9.74160032 16.2509104,9.59910798 C17.0201658,8.17755699 17.2088969,6.78363112 16.7499013,5.65913129 C16.4604017,4.81092573 15.7231445,4.11008901 14.7401472,3.70936139 C13.1379564,3.11266008 11.0475663,3.84092251 9.89976068,5.36430396 L9.50799408,5.8842613 L9.10670536,5.37161711 C7.94954806,3.89335486 6.00516066,3.14638251 4.31830373,3.71958508 C3.36517186,4.00646284 2.65439601,4.72068063 2.23964629,5.77358234 C1.79050315,6.87166888 1.98214559,8.26476279 2.74015555,9.58185512 C2.94777753,9.93163559 3.23221417,10.3090129 3.5869453,10.7089994 C4.17752179,11.3749196 4.94653811,12.0862394 5.85617417,12.8273544 C7.11233096,13.8507929 9.65858244,15.6292133 9.58280954,15.555334 C9.53938013,15.5129899 9.48608859,15.5 9.50042471,15.5 C9.5105974,15.5 9.48275828,15.5074148 9.44985848,15.5291774 Z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- column2 -->
+            <div class="main-blog-container__col main-blog-container__col-1">
+                <div class="main-blog-container__col-wrapper">
+                    <div class="main-blog-container__image2"></div>
+                    <div class="main-blog-container__info">
+                        <div class="main-blog-container__publication-and-link">
+                            <div class="main-blog-container__publication publication">
+                                <div class="publication__info">
+                                    <div class="publication__icon"></div>
+                                    <!-- publication description -->
+                                    <div class="publication__description">
+                                        <!-- author -->
+                                        <div class="publication__author author">
+                                            <span class="author__name">Ilya Lytvynov</span>
+                                            <div class="author__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19"
+                                                    style="fill-rule:evenodd" class="author__svg">
+                                                    <path
+                                                        d="M15.3812,6.495914 L12.6789333,8.77258837 C12.6191333,8.84477644 12.5099333,8.85722265 12.4354,8.79997005 C12.4215333,8.79001308 12.4094,8.77756686 12.3998667,8.76429089 L9.78686667,6.14327115 C9.67766667,5.99225704 9.46186667,5.95491839 9.305,6.05863687 C9.26946667,6.08186981 9.23913333,6.11091099 9.21573333,6.14493065 L6.60013333,8.81075677 C6.5464,8.88626383 6.43893333,8.90534803 6.3592,8.85390366 C6.34446667,8.84394669 6.33146667,8.83233022 6.32106667,8.81905425 L3.61966667,6.50587098 C3.5018,6.36149485 3.28426667,6.33577266 3.13346667,6.44861837 C3.0494,6.51167921 3,6.60792997 3,6.70998895 L4,14 L15,14 L16,6.70169148 C16,6.51831719 15.8448667,6.36979232 15.6533333,6.36979232 C15.5476,6.36979232 15.4470667,6.41625821 15.3812,6.495914 Z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <!-- time -->
+                                        <div class="publication__time time">
+                                            <span class="time__date">Apr 8</span>
+                                            <span class="time__separator"></span>
+                                            <span class="time__read">1 min</span>
+                                        </div>
+                                    </div>
+                                    <!-- end publication description -->
+                                </div>
+                                <div class="publication__share share">
+                                    <button class="share__btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"
+                                            class="blog-post-homepage-description-fill blog-post-homepage-link-hashtag-hover-fill">
+                                            <path
+                                                d="M2.44398805,5.99973295 C1.62345525,5.9690612 0.980075653,5.28418875 1.00047182,4.46312144 C1.02086799,3.64205413 1.69745853,2.98998831 2.51850166,3.0001164 C3.33954478,3.01024449 3.99985313,3.67880182 4,4.50012255 C3.98424812,5.34399206 3.28763905,6.0153508 2.44398805,5.99973295 L2.44398805,5.99973295 Z M2.44398805,10.9997329 C1.62345525,10.9690612 0.980075653,10.2841888 1.00047182,9.46312144 C1.02086799,8.64205413 1.69745853,7.98998831 2.51850166,8.0001164 C3.33954478,8.01024449 3.99985313,8.67880182 4,9.50012255 C3.98424812,10.3439921 3.28763905,11.0153508 2.44398805,10.9997329 L2.44398805,10.9997329 Z M2.44398805,15.9997329 C1.62345525,15.9690612 0.980075653,15.2841888 1.00047182,14.4631214 C1.02086799,13.6420541 1.69745853,12.9899883 2.51850166,13.0001164 C3.33954478,13.0102445 3.99985313,13.6788018 4,14.5001225 C3.98424812,15.3439921 3.28763905,16.0153508 2.44398805,15.9997329 L2.44398805,15.9997329 Z">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="blog-mobile"><a class="main-blog-container__info-link" href="#">Krispy Kale Salad</a>
+                                <p class="main-blog-container__test">Create a blog post subtitle that summarizes your post in a
+                                    few short punchy sentences and...</p>
+                            </div>
+                        </div>
+                        <div class="test3">
+                            <div class="main-blog-container__info-wrapper">
+                                <div class="main-blog-container__icon-and-number">
+                                    <div class="main-blog-container__eyes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"
+                                            aria-label="Views count" class="blog-icon-fill">
+                                            <title></title>
+                                            <path
+                                                d="M18.6514224,10.4604595 C17.3924224,11.9688254 13.9774224,15.4790227 9.46342244,15.5 L9.42442244,15.5 C6.26242244,15.5 3.20842244,13.7938483 0.345422443,10.4264963 C-0.115140814,9.88163847 -0.115140814,9.08439833 0.345422443,8.5395405 C1.60442244,7.03117456 5.01942244,3.52097727 9.53342244,3.5 L9.57342244,3.5 C12.7354224,3.5 15.7894224,5.20615167 18.6524224,8.5735037 C19.1122856,9.11875503 19.1118633,9.91569484 18.6514224,10.4604595 Z M17.8674224,9.2228003 C15.2084224,6.09518855 12.4194224,4.50990594 9.57442244,4.50990594 L9.54042244,4.50990594 C5.46142244,4.52888537 2.30642244,7.78335969 1.14042244,9.18084575 C0.991393136,9.3517953 0.988008897,9.60533857 1.13242244,9.78019645 C3.79142244,12.9078082 6.58142244,14.4920919 9.42542244,14.4920919 L9.46042244,14.4920919 C13.5394224,14.4741114 16.6934224,11.2196371 17.8604224,9.822151 C18.0095734,9.6511131 18.0125381,9.39726759 17.8674224,9.2228003 L17.8674224,9.2228003 Z M9.49942244,13.3932823 C7.35251405,13.3646853 5.63255349,11.6080263 5.65157552,9.46333471 C5.67059754,7.31864313 7.42144652,5.59270141 9.56852513,5.6021069 C11.7156037,5.61151239 13.4512316,7.35272696 13.4514224,9.49750271 C13.4349115,11.6625186 11.6668124,13.4054651 9.49942244,13.3932823 L9.49942244,13.3932823 Z M9.49942244,6.61762258 C7.91092198,6.63961751 6.63891624,7.93990193 6.65354481,9.52676854 C6.66817338,11.1136351 7.96393479,12.3902997 9.55257137,12.3830695 C11.1412079,12.3758393 12.4252698,11.0874333 12.4254224,9.50049946 C12.4127657,7.89797688 11.1037033,6.60820738 9.49942244,6.61762258 L9.49942244,6.61762258 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div><span>26</span></div>
+                                </div>
+                                <div class="main-blog-container__comment"><span>Write a comment</span></div>
+                                <button class="main-blog-container__like">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img">
+                                        <path
+                                            d="M9.44985848,15.5291774 C9.43911371,15.5362849 9.42782916,15.5449227 9.41715267,15.5553324 L9.44985848,15.5291774 Z M9.44985848,15.5291774 L9.49370677,15.4941118 C9.15422701,15.7147757 10.2318883,15.0314406 10.7297038,14.6971183 C11.5633567,14.1372547 12.3827081,13.5410755 13.1475707,12.9201001 C14.3829188,11.9171478 15.3570936,10.9445466 15.9707237,10.0482572 C16.0768097,9.89330422 16.1713564,9.74160032 16.2509104,9.59910798 C17.0201658,8.17755699 17.2088969,6.78363112 16.7499013,5.65913129 C16.4604017,4.81092573 15.7231445,4.11008901 14.7401472,3.70936139 C13.1379564,3.11266008 11.0475663,3.84092251 9.89976068,5.36430396 L9.50799408,5.8842613 L9.10670536,5.37161711 C7.94954806,3.89335486 6.00516066,3.14638251 4.31830373,3.71958508 C3.36517186,4.00646284 2.65439601,4.72068063 2.23964629,5.77358234 C1.79050315,6.87166888 1.98214559,8.26476279 2.74015555,9.58185512 C2.94777753,9.93163559 3.23221417,10.3090129 3.5869453,10.7089994 C4.17752179,11.3749196 4.94653811,12.0862394 5.85617417,12.8273544 C7.11233096,13.8507929 9.65858244,15.6292133 9.58280954,15.555334 C9.53938013,15.5129899 9.48608859,15.5 9.50042471,15.5 C9.5105974,15.5 9.48275828,15.5074148 9.44985848,15.5291774 Z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- column3 -->
+            <div class="main-blog-container__col main-blog-container__col-1">
+                <div class="main-blog-container__col-wrapper">
+                    <div class="main-blog-container__image3"></div>
+                    <div class="main-blog-container__info">
+                        <div class="main-blog-container__publication-and-link">
+                            <div class="main-blog-container__publication publication">
+                                <div class="publication__info">
+                                    <div class="publication__icon"></div>
+                                    <!-- publication description -->
+                                    <div class="publication__description">
+                                        <!-- author -->
+                                        <div class="publication__author author">
+                                            <span class="author__name">Ilya Lytvynov</span>
+                                            <div class="author__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19"
+                                                    style="fill-rule:evenodd" class="author__svg">
+                                                    <path
+                                                        d="M15.3812,6.495914 L12.6789333,8.77258837 C12.6191333,8.84477644 12.5099333,8.85722265 12.4354,8.79997005 C12.4215333,8.79001308 12.4094,8.77756686 12.3998667,8.76429089 L9.78686667,6.14327115 C9.67766667,5.99225704 9.46186667,5.95491839 9.305,6.05863687 C9.26946667,6.08186981 9.23913333,6.11091099 9.21573333,6.14493065 L6.60013333,8.81075677 C6.5464,8.88626383 6.43893333,8.90534803 6.3592,8.85390366 C6.34446667,8.84394669 6.33146667,8.83233022 6.32106667,8.81905425 L3.61966667,6.50587098 C3.5018,6.36149485 3.28426667,6.33577266 3.13346667,6.44861837 C3.0494,6.51167921 3,6.60792997 3,6.70998895 L4,14 L15,14 L16,6.70169148 C16,6.51831719 15.8448667,6.36979232 15.6533333,6.36979232 C15.5476,6.36979232 15.4470667,6.41625821 15.3812,6.495914 Z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <!-- time -->
+                                        <div class="publication__time time">
+                                            <span class="time__date">Apr 8</span>
+                                            <span class="time__separator"></span>
+                                            <span class="time__read">1 min</span>
+                                        </div>
+                                    </div>
+                                    <!-- end publication description -->
+                                </div>
+                                <div class="publication__share share">
+                                    <button class="share__btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"
+                                            class="blog-post-homepage-description-fill blog-post-homepage-link-hashtag-hover-fill">
+                                            <path
+                                                d="M2.44398805,5.99973295 C1.62345525,5.9690612 0.980075653,5.28418875 1.00047182,4.46312144 C1.02086799,3.64205413 1.69745853,2.98998831 2.51850166,3.0001164 C3.33954478,3.01024449 3.99985313,3.67880182 4,4.50012255 C3.98424812,5.34399206 3.28763905,6.0153508 2.44398805,5.99973295 L2.44398805,5.99973295 Z M2.44398805,10.9997329 C1.62345525,10.9690612 0.980075653,10.2841888 1.00047182,9.46312144 C1.02086799,8.64205413 1.69745853,7.98998831 2.51850166,8.0001164 C3.33954478,8.01024449 3.99985313,8.67880182 4,9.50012255 C3.98424812,10.3439921 3.28763905,11.0153508 2.44398805,10.9997329 L2.44398805,10.9997329 Z M2.44398805,15.9997329 C1.62345525,15.9690612 0.980075653,15.2841888 1.00047182,14.4631214 C1.02086799,13.6420541 1.69745853,12.9899883 2.51850166,13.0001164 C3.33954478,13.0102445 3.99985313,13.6788018 4,14.5001225 C3.98424812,15.3439921 3.28763905,16.0153508 2.44398805,15.9997329 L2.44398805,15.9997329 Z">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="blog-mobile"><a class="main-blog-container__info-link" href="#">Urban Garden Workshop</a>
+                                <p class="main-blog-container__test">Create a blog post subtitle that summarizes your post in a
+                                    few short punchy sentences and...</p>
+                            </div>
+                        </div>
+                        <div class="test3">
+                            <div class="main-blog-container__info-wrapper">
+                                <div class="main-blog-container__icon-and-number">
+                                    <div class="main-blog-container__eyes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"
+                                            aria-label="Views count" class="blog-icon-fill">
+                                            <title></title>
+                                            <path
+                                                d="M18.6514224,10.4604595 C17.3924224,11.9688254 13.9774224,15.4790227 9.46342244,15.5 L9.42442244,15.5 C6.26242244,15.5 3.20842244,13.7938483 0.345422443,10.4264963 C-0.115140814,9.88163847 -0.115140814,9.08439833 0.345422443,8.5395405 C1.60442244,7.03117456 5.01942244,3.52097727 9.53342244,3.5 L9.57342244,3.5 C12.7354224,3.5 15.7894224,5.20615167 18.6524224,8.5735037 C19.1122856,9.11875503 19.1118633,9.91569484 18.6514224,10.4604595 Z M17.8674224,9.2228003 C15.2084224,6.09518855 12.4194224,4.50990594 9.57442244,4.50990594 L9.54042244,4.50990594 C5.46142244,4.52888537 2.30642244,7.78335969 1.14042244,9.18084575 C0.991393136,9.3517953 0.988008897,9.60533857 1.13242244,9.78019645 C3.79142244,12.9078082 6.58142244,14.4920919 9.42542244,14.4920919 L9.46042244,14.4920919 C13.5394224,14.4741114 16.6934224,11.2196371 17.8604224,9.822151 C18.0095734,9.6511131 18.0125381,9.39726759 17.8674224,9.2228003 L17.8674224,9.2228003 Z M9.49942244,13.3932823 C7.35251405,13.3646853 5.63255349,11.6080263 5.65157552,9.46333471 C5.67059754,7.31864313 7.42144652,5.59270141 9.56852513,5.6021069 C11.7156037,5.61151239 13.4512316,7.35272696 13.4514224,9.49750271 C13.4349115,11.6625186 11.6668124,13.4054651 9.49942244,13.3932823 L9.49942244,13.3932823 Z M9.49942244,6.61762258 C7.91092198,6.63961751 6.63891624,7.93990193 6.65354481,9.52676854 C6.66817338,11.1136351 7.96393479,12.3902997 9.55257137,12.3830695 C11.1412079,12.3758393 12.4252698,11.0874333 12.4254224,9.50049946 C12.4127657,7.89797688 11.1037033,6.60820738 9.49942244,6.61762258 L9.49942244,6.61762258 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div><span>26</span></div>
+                                </div>
+                                <div class="main-blog-container__comment"><span>Write a comment</span></div>
+                                <button class="main-blog-container__like">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img">
+                                        <path
+                                            d="M9.44985848,15.5291774 C9.43911371,15.5362849 9.42782916,15.5449227 9.41715267,15.5553324 L9.44985848,15.5291774 Z M9.44985848,15.5291774 L9.49370677,15.4941118 C9.15422701,15.7147757 10.2318883,15.0314406 10.7297038,14.6971183 C11.5633567,14.1372547 12.3827081,13.5410755 13.1475707,12.9201001 C14.3829188,11.9171478 15.3570936,10.9445466 15.9707237,10.0482572 C16.0768097,9.89330422 16.1713564,9.74160032 16.2509104,9.59910798 C17.0201658,8.17755699 17.2088969,6.78363112 16.7499013,5.65913129 C16.4604017,4.81092573 15.7231445,4.11008901 14.7401472,3.70936139 C13.1379564,3.11266008 11.0475663,3.84092251 9.89976068,5.36430396 L9.50799408,5.8842613 L9.10670536,5.37161711 C7.94954806,3.89335486 6.00516066,3.14638251 4.31830373,3.71958508 C3.36517186,4.00646284 2.65439601,4.72068063 2.23964629,5.77358234 C1.79050315,6.87166888 1.98214559,8.26476279 2.74015555,9.58185512 C2.94777753,9.93163559 3.23221417,10.3090129 3.5869453,10.7089994 C4.17752179,11.3749196 4.94653811,12.0862394 5.85617417,12.8273544 C7.11233096,13.8507929 9.65858244,15.6292133 9.58280954,15.555334 C9.53938013,15.5129899 9.48608859,15.5 9.50042471,15.5 C9.5105974,15.5 9.48275828,15.5074148 9.44985848,15.5291774 Z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!-- column4 -->
+            <div class="main-blog-container__col main-blog-container__col-1">
+                <div class="main-blog-container__col-wrapper">
+                    <div class="main-blog-container__image4"></div>
+                    <div class="main-blog-container__info">
+                        <div class="main-blog-container__publication-and-link">
+                            <div class="main-blog-container__publication publication">
+                                <div class="publication__info">
+                                    <div class="publication__icon"></div>
+                                    <!-- publication description -->
+                                    <div class="publication__description">
+                                        <!-- author -->
+                                        <div class="publication__author author">
+                                            <span class="author__name">Ilya Lytvynov</span>
+                                            <div class="author__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19"
+                                                    style="fill-rule:evenodd" class="author__svg">
+                                                    <path
+                                                        d="M15.3812,6.495914 L12.6789333,8.77258837 C12.6191333,8.84477644 12.5099333,8.85722265 12.4354,8.79997005 C12.4215333,8.79001308 12.4094,8.77756686 12.3998667,8.76429089 L9.78686667,6.14327115 C9.67766667,5.99225704 9.46186667,5.95491839 9.305,6.05863687 C9.26946667,6.08186981 9.23913333,6.11091099 9.21573333,6.14493065 L6.60013333,8.81075677 C6.5464,8.88626383 6.43893333,8.90534803 6.3592,8.85390366 C6.34446667,8.84394669 6.33146667,8.83233022 6.32106667,8.81905425 L3.61966667,6.50587098 C3.5018,6.36149485 3.28426667,6.33577266 3.13346667,6.44861837 C3.0494,6.51167921 3,6.60792997 3,6.70998895 L4,14 L15,14 L16,6.70169148 C16,6.51831719 15.8448667,6.36979232 15.6533333,6.36979232 C15.5476,6.36979232 15.4470667,6.41625821 15.3812,6.495914 Z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <!-- time -->
+                                        <div class="publication__time time">
+                                            <span class="time__date">Apr 8</span>
+                                            <span class="time__separator"></span>
+                                            <span class="time__read">1 min</span>
+                                        </div>
+                                    </div>
+                                    <!-- end publication description -->
+                                </div>
+                                <div class="publication__share share">
+                                    <button class="share__btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"
+                                            class="blog-post-homepage-description-fill blog-post-homepage-link-hashtag-hover-fill">
+                                            <path
+                                                d="M2.44398805,5.99973295 C1.62345525,5.9690612 0.980075653,5.28418875 1.00047182,4.46312144 C1.02086799,3.64205413 1.69745853,2.98998831 2.51850166,3.0001164 C3.33954478,3.01024449 3.99985313,3.67880182 4,4.50012255 C3.98424812,5.34399206 3.28763905,6.0153508 2.44398805,5.99973295 L2.44398805,5.99973295 Z M2.44398805,10.9997329 C1.62345525,10.9690612 0.980075653,10.2841888 1.00047182,9.46312144 C1.02086799,8.64205413 1.69745853,7.98998831 2.51850166,8.0001164 C3.33954478,8.01024449 3.99985313,8.67880182 4,9.50012255 C3.98424812,10.3439921 3.28763905,11.0153508 2.44398805,10.9997329 L2.44398805,10.9997329 Z M2.44398805,15.9997329 C1.62345525,15.9690612 0.980075653,15.2841888 1.00047182,14.4631214 C1.02086799,13.6420541 1.69745853,12.9899883 2.51850166,13.0001164 C3.33954478,13.0102445 3.99985313,13.6788018 4,14.5001225 C3.98424812,15.3439921 3.28763905,16.0153508 2.44398805,15.9997329 L2.44398805,15.9997329 Z">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="blog-mobile"><a class="main-blog-container__info-link" href="#">Pumpkin Carving Festival</a>
+                                <p class="main-blog-container__test">Create a blog post subtitle that summarizes your post in a
+                                    few short punchy sentences and...</p>
+                            </div>
+                        </div>
+                        <div class="test3">
+                            <div class="main-blog-container__info-wrapper">
+                                <div class="main-blog-container__icon-and-number">
+                                    <div class="main-blog-container__eyes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"
+                                            aria-label="Views count" class="blog-icon-fill">
+                                            <title></title>
+                                            <path
+                                                d="M18.6514224,10.4604595 C17.3924224,11.9688254 13.9774224,15.4790227 9.46342244,15.5 L9.42442244,15.5 C6.26242244,15.5 3.20842244,13.7938483 0.345422443,10.4264963 C-0.115140814,9.88163847 -0.115140814,9.08439833 0.345422443,8.5395405 C1.60442244,7.03117456 5.01942244,3.52097727 9.53342244,3.5 L9.57342244,3.5 C12.7354224,3.5 15.7894224,5.20615167 18.6524224,8.5735037 C19.1122856,9.11875503 19.1118633,9.91569484 18.6514224,10.4604595 Z M17.8674224,9.2228003 C15.2084224,6.09518855 12.4194224,4.50990594 9.57442244,4.50990594 L9.54042244,4.50990594 C5.46142244,4.52888537 2.30642244,7.78335969 1.14042244,9.18084575 C0.991393136,9.3517953 0.988008897,9.60533857 1.13242244,9.78019645 C3.79142244,12.9078082 6.58142244,14.4920919 9.42542244,14.4920919 L9.46042244,14.4920919 C13.5394224,14.4741114 16.6934224,11.2196371 17.8604224,9.822151 C18.0095734,9.6511131 18.0125381,9.39726759 17.8674224,9.2228003 L17.8674224,9.2228003 Z M9.49942244,13.3932823 C7.35251405,13.3646853 5.63255349,11.6080263 5.65157552,9.46333471 C5.67059754,7.31864313 7.42144652,5.59270141 9.56852513,5.6021069 C11.7156037,5.61151239 13.4512316,7.35272696 13.4514224,9.49750271 C13.4349115,11.6625186 11.6668124,13.4054651 9.49942244,13.3932823 L9.49942244,13.3932823 Z M9.49942244,6.61762258 C7.91092198,6.63961751 6.63891624,7.93990193 6.65354481,9.52676854 C6.66817338,11.1136351 7.96393479,12.3902997 9.55257137,12.3830695 C11.1412079,12.3758393 12.4252698,11.0874333 12.4254224,9.50049946 C12.4127657,7.89797688 11.1037033,6.60820738 9.49942244,6.61762258 L9.49942244,6.61762258 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div><span>26</span></div>
+                                </div>
+                                <div class="main-blog-container__comment"><span>Write a comment</span></div>
+                                <button class="main-blog-container__like">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img">
+                                        <path
+                                            d="M9.44985848,15.5291774 C9.43911371,15.5362849 9.42782916,15.5449227 9.41715267,15.5553324 L9.44985848,15.5291774 Z M9.44985848,15.5291774 L9.49370677,15.4941118 C9.15422701,15.7147757 10.2318883,15.0314406 10.7297038,14.6971183 C11.5633567,14.1372547 12.3827081,13.5410755 13.1475707,12.9201001 C14.3829188,11.9171478 15.3570936,10.9445466 15.9707237,10.0482572 C16.0768097,9.89330422 16.1713564,9.74160032 16.2509104,9.59910798 C17.0201658,8.17755699 17.2088969,6.78363112 16.7499013,5.65913129 C16.4604017,4.81092573 15.7231445,4.11008901 14.7401472,3.70936139 C13.1379564,3.11266008 11.0475663,3.84092251 9.89976068,5.36430396 L9.50799408,5.8842613 L9.10670536,5.37161711 C7.94954806,3.89335486 6.00516066,3.14638251 4.31830373,3.71958508 C3.36517186,4.00646284 2.65439601,4.72068063 2.23964629,5.77358234 C1.79050315,6.87166888 1.98214559,8.26476279 2.74015555,9.58185512 C2.94777753,9.93163559 3.23221417,10.3090129 3.5869453,10.7089994 C4.17752179,11.3749196 4.94653811,12.0862394 5.85617417,12.8273544 C7.11233096,13.8507929 9.65858244,15.6292133 9.58280954,15.555334 C9.53938013,15.5129899 9.48608859,15.5 9.50042471,15.5 C9.5105974,15.5 9.48275828,15.5074148 9.44985848,15.5291774 Z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+
+            <!-- column5 -->
+            <div class="main-blog-container__col main-blog-container__col-1">
+                <div class="main-blog-container__col-wrapper">
+                    <div class="main-blog-container__image5"></div>
+                    <div class="main-blog-container__info">
+                        <div class="main-blog-container__publication-and-link">
+                            <div class="main-blog-container__publication publication">
+                                <div class="publication__info">
+                                    <div class="publication__icon"></div>
+                                    <!-- publication description -->
+                                    <div class="publication__description">
+                                        <!-- author -->
+                                        <div class="publication__author author">
+                                            <span class="author__name">Ilya Lytvynov</span>
+                                            <div class="author__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19"
+                                                    style="fill-rule:evenodd" class="author__svg">
+                                                    <path
+                                                        d="M15.3812,6.495914 L12.6789333,8.77258837 C12.6191333,8.84477644 12.5099333,8.85722265 12.4354,8.79997005 C12.4215333,8.79001308 12.4094,8.77756686 12.3998667,8.76429089 L9.78686667,6.14327115 C9.67766667,5.99225704 9.46186667,5.95491839 9.305,6.05863687 C9.26946667,6.08186981 9.23913333,6.11091099 9.21573333,6.14493065 L6.60013333,8.81075677 C6.5464,8.88626383 6.43893333,8.90534803 6.3592,8.85390366 C6.34446667,8.84394669 6.33146667,8.83233022 6.32106667,8.81905425 L3.61966667,6.50587098 C3.5018,6.36149485 3.28426667,6.33577266 3.13346667,6.44861837 C3.0494,6.51167921 3,6.60792997 3,6.70998895 L4,14 L15,14 L16,6.70169148 C16,6.51831719 15.8448667,6.36979232 15.6533333,6.36979232 C15.5476,6.36979232 15.4470667,6.41625821 15.3812,6.495914 Z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <!-- time -->
+                                        <div class="publication__time time">
+                                            <span class="time__date">Apr 8</span>
+                                            <span class="time__separator"></span>
+                                            <span class="time__read">1 min</span>
+                                        </div>
+                                    </div>
+                                    <!-- end publication description -->
+                                </div>
+                                <div class="publication__share share">
+                                    <button class="share__btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"
+                                            class="blog-post-homepage-description-fill blog-post-homepage-link-hashtag-hover-fill">
+                                            <path
+                                                d="M2.44398805,5.99973295 C1.62345525,5.9690612 0.980075653,5.28418875 1.00047182,4.46312144 C1.02086799,3.64205413 1.69745853,2.98998831 2.51850166,3.0001164 C3.33954478,3.01024449 3.99985313,3.67880182 4,4.50012255 C3.98424812,5.34399206 3.28763905,6.0153508 2.44398805,5.99973295 L2.44398805,5.99973295 Z M2.44398805,10.9997329 C1.62345525,10.9690612 0.980075653,10.2841888 1.00047182,9.46312144 C1.02086799,8.64205413 1.69745853,7.98998831 2.51850166,8.0001164 C3.33954478,8.01024449 3.99985313,8.67880182 4,9.50012255 C3.98424812,10.3439921 3.28763905,11.0153508 2.44398805,10.9997329 L2.44398805,10.9997329 Z M2.44398805,15.9997329 C1.62345525,15.9690612 0.980075653,15.2841888 1.00047182,14.4631214 C1.02086799,13.6420541 1.69745853,12.9899883 2.51850166,13.0001164 C3.33954478,13.0102445 3.99985313,13.6788018 4,14.5001225 C3.98424812,15.3439921 3.28763905,16.0153508 2.44398805,15.9997329 L2.44398805,15.9997329 Z">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="blog-mobile"><a class="main-blog-container__info-link" href="#">Farm Tour: Get to Know the Land</a>
+                                <p class="main-blog-container__test">Create a blog post subtitle that summarizes your post in a
+                                    few short punchy sentences and...</p>
+                            </div>
+                        </div>
+                        <div class="test3">
+                            <div class="main-blog-container__info-wrapper">
+                                <div class="main-blog-container__icon-and-number">
+                                    <div class="main-blog-container__eyes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"
+                                            aria-label="Views count" class="blog-icon-fill">
+                                            <title></title>
+                                            <path
+                                                d="M18.6514224,10.4604595 C17.3924224,11.9688254 13.9774224,15.4790227 9.46342244,15.5 L9.42442244,15.5 C6.26242244,15.5 3.20842244,13.7938483 0.345422443,10.4264963 C-0.115140814,9.88163847 -0.115140814,9.08439833 0.345422443,8.5395405 C1.60442244,7.03117456 5.01942244,3.52097727 9.53342244,3.5 L9.57342244,3.5 C12.7354224,3.5 15.7894224,5.20615167 18.6524224,8.5735037 C19.1122856,9.11875503 19.1118633,9.91569484 18.6514224,10.4604595 Z M17.8674224,9.2228003 C15.2084224,6.09518855 12.4194224,4.50990594 9.57442244,4.50990594 L9.54042244,4.50990594 C5.46142244,4.52888537 2.30642244,7.78335969 1.14042244,9.18084575 C0.991393136,9.3517953 0.988008897,9.60533857 1.13242244,9.78019645 C3.79142244,12.9078082 6.58142244,14.4920919 9.42542244,14.4920919 L9.46042244,14.4920919 C13.5394224,14.4741114 16.6934224,11.2196371 17.8604224,9.822151 C18.0095734,9.6511131 18.0125381,9.39726759 17.8674224,9.2228003 L17.8674224,9.2228003 Z M9.49942244,13.3932823 C7.35251405,13.3646853 5.63255349,11.6080263 5.65157552,9.46333471 C5.67059754,7.31864313 7.42144652,5.59270141 9.56852513,5.6021069 C11.7156037,5.61151239 13.4512316,7.35272696 13.4514224,9.49750271 C13.4349115,11.6625186 11.6668124,13.4054651 9.49942244,13.3932823 L9.49942244,13.3932823 Z M9.49942244,6.61762258 C7.91092198,6.63961751 6.63891624,7.93990193 6.65354481,9.52676854 C6.66817338,11.1136351 7.96393479,12.3902997 9.55257137,12.3830695 C11.1412079,12.3758393 12.4252698,11.0874333 12.4254224,9.50049946 C12.4127657,7.89797688 11.1037033,6.60820738 9.49942244,6.61762258 L9.49942244,6.61762258 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div><span>26</span></div>
+                                </div>
+                                <div class="main-blog-container__comment"><span>Write a comment</span></div>
+                                <button class="main-blog-container__like">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img">
+                                        <path
+                                            d="M9.44985848,15.5291774 C9.43911371,15.5362849 9.42782916,15.5449227 9.41715267,15.5553324 L9.44985848,15.5291774 Z M9.44985848,15.5291774 L9.49370677,15.4941118 C9.15422701,15.7147757 10.2318883,15.0314406 10.7297038,14.6971183 C11.5633567,14.1372547 12.3827081,13.5410755 13.1475707,12.9201001 C14.3829188,11.9171478 15.3570936,10.9445466 15.9707237,10.0482572 C16.0768097,9.89330422 16.1713564,9.74160032 16.2509104,9.59910798 C17.0201658,8.17755699 17.2088969,6.78363112 16.7499013,5.65913129 C16.4604017,4.81092573 15.7231445,4.11008901 14.7401472,3.70936139 C13.1379564,3.11266008 11.0475663,3.84092251 9.89976068,5.36430396 L9.50799408,5.8842613 L9.10670536,5.37161711 C7.94954806,3.89335486 6.00516066,3.14638251 4.31830373,3.71958508 C3.36517186,4.00646284 2.65439601,4.72068063 2.23964629,5.77358234 C1.79050315,6.87166888 1.98214559,8.26476279 2.74015555,9.58185512 C2.94777753,9.93163559 3.23221417,10.3090129 3.5869453,10.7089994 C4.17752179,11.3749196 4.94653811,12.0862394 5.85617417,12.8273544 C7.11233096,13.8507929 9.65858244,15.6292133 9.58280954,15.555334 C9.53938013,15.5129899 9.48608859,15.5 9.50042471,15.5 C9.5105974,15.5 9.48275828,15.5074148 9.44985848,15.5291774 Z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+
+            <!-- column6 -->
+            <div class="main-blog-container__col main-blog-container__col-1">
+                <div class="main-blog-container__col-wrapper">
+                    <div class="main-blog-container__image6"></div>
+                    <div class="main-blog-container__info">
+                        <div class="main-blog-container__publication-and-link">
+                            <div class="main-blog-container__publication publication">
+                                <div class="publication__info">
+                                    <div class="publication__icon"></div>
+                                    <!-- publication description -->
+                                    <div class="publication__description">
+                                        <!-- author -->
+                                        <div class="publication__author author">
+                                            <span class="author__name">Ilya Lytvynov</span>
+                                            <div class="author__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19"
+                                                    style="fill-rule:evenodd" class="author__svg">
+                                                    <path
+                                                        d="M15.3812,6.495914 L12.6789333,8.77258837 C12.6191333,8.84477644 12.5099333,8.85722265 12.4354,8.79997005 C12.4215333,8.79001308 12.4094,8.77756686 12.3998667,8.76429089 L9.78686667,6.14327115 C9.67766667,5.99225704 9.46186667,5.95491839 9.305,6.05863687 C9.26946667,6.08186981 9.23913333,6.11091099 9.21573333,6.14493065 L6.60013333,8.81075677 C6.5464,8.88626383 6.43893333,8.90534803 6.3592,8.85390366 C6.34446667,8.84394669 6.33146667,8.83233022 6.32106667,8.81905425 L3.61966667,6.50587098 C3.5018,6.36149485 3.28426667,6.33577266 3.13346667,6.44861837 C3.0494,6.51167921 3,6.60792997 3,6.70998895 L4,14 L15,14 L16,6.70169148 C16,6.51831719 15.8448667,6.36979232 15.6533333,6.36979232 C15.5476,6.36979232 15.4470667,6.41625821 15.3812,6.495914 Z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <!-- time -->
+                                        <div class="publication__time time">
+                                            <span class="time__date">Apr 8</span>
+                                            <span class="time__separator"></span>
+                                            <span class="time__read">1 min</span>
+                                        </div>
+                                    </div>
+                                    <!-- end publication description -->
+                                </div>
+                                <div class="publication__share share">
+                                    <button class="share__btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"
+                                            class="blog-post-homepage-description-fill blog-post-homepage-link-hashtag-hover-fill">
+                                            <path
+                                                d="M2.44398805,5.99973295 C1.62345525,5.9690612 0.980075653,5.28418875 1.00047182,4.46312144 C1.02086799,3.64205413 1.69745853,2.98998831 2.51850166,3.0001164 C3.33954478,3.01024449 3.99985313,3.67880182 4,4.50012255 C3.98424812,5.34399206 3.28763905,6.0153508 2.44398805,5.99973295 L2.44398805,5.99973295 Z M2.44398805,10.9997329 C1.62345525,10.9690612 0.980075653,10.2841888 1.00047182,9.46312144 C1.02086799,8.64205413 1.69745853,7.98998831 2.51850166,8.0001164 C3.33954478,8.01024449 3.99985313,8.67880182 4,9.50012255 C3.98424812,10.3439921 3.28763905,11.0153508 2.44398805,10.9997329 L2.44398805,10.9997329 Z M2.44398805,15.9997329 C1.62345525,15.9690612 0.980075653,15.2841888 1.00047182,14.4631214 C1.02086799,13.6420541 1.69745853,12.9899883 2.51850166,13.0001164 C3.33954478,13.0102445 3.99985313,13.6788018 4,14.5001225 C3.98424812,15.3439921 3.28763905,16.0153508 2.44398805,15.9997329 L2.44398805,15.9997329 Z">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="blog-mobile"><a class="main-blog-container__info-link" href="#">Sweet Potato Fries</a>
+                                <p class="main-blog-container__test">Create a blog post subtitle that summarizes your post in a
+                                    few short punchy sentences and...</p>
+                            </div>
+                        </div>
+                        <div class="test3">
+                            <div class="main-blog-container__info-wrapper">
+                                <div class="main-blog-container__icon-and-number">
+                                    <div class="main-blog-container__eyes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"
+                                            aria-label="Views count" class="blog-icon-fill">
+                                            <title></title>
+                                            <path
+                                                d="M18.6514224,10.4604595 C17.3924224,11.9688254 13.9774224,15.4790227 9.46342244,15.5 L9.42442244,15.5 C6.26242244,15.5 3.20842244,13.7938483 0.345422443,10.4264963 C-0.115140814,9.88163847 -0.115140814,9.08439833 0.345422443,8.5395405 C1.60442244,7.03117456 5.01942244,3.52097727 9.53342244,3.5 L9.57342244,3.5 C12.7354224,3.5 15.7894224,5.20615167 18.6524224,8.5735037 C19.1122856,9.11875503 19.1118633,9.91569484 18.6514224,10.4604595 Z M17.8674224,9.2228003 C15.2084224,6.09518855 12.4194224,4.50990594 9.57442244,4.50990594 L9.54042244,4.50990594 C5.46142244,4.52888537 2.30642244,7.78335969 1.14042244,9.18084575 C0.991393136,9.3517953 0.988008897,9.60533857 1.13242244,9.78019645 C3.79142244,12.9078082 6.58142244,14.4920919 9.42542244,14.4920919 L9.46042244,14.4920919 C13.5394224,14.4741114 16.6934224,11.2196371 17.8604224,9.822151 C18.0095734,9.6511131 18.0125381,9.39726759 17.8674224,9.2228003 L17.8674224,9.2228003 Z M9.49942244,13.3932823 C7.35251405,13.3646853 5.63255349,11.6080263 5.65157552,9.46333471 C5.67059754,7.31864313 7.42144652,5.59270141 9.56852513,5.6021069 C11.7156037,5.61151239 13.4512316,7.35272696 13.4514224,9.49750271 C13.4349115,11.6625186 11.6668124,13.4054651 9.49942244,13.3932823 L9.49942244,13.3932823 Z M9.49942244,6.61762258 C7.91092198,6.63961751 6.63891624,7.93990193 6.65354481,9.52676854 C6.66817338,11.1136351 7.96393479,12.3902997 9.55257137,12.3830695 C11.1412079,12.3758393 12.4252698,11.0874333 12.4254224,9.50049946 C12.4127657,7.89797688 11.1037033,6.60820738 9.49942244,6.61762258 L9.49942244,6.61762258 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div><span>26</span></div>
+                                </div>
+                                <div class="main-blog-container__comment"><span>Write a comment</span></div>
+                                <button class="main-blog-container__like">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img">
+                                        <path
+                                            d="M9.44985848,15.5291774 C9.43911371,15.5362849 9.42782916,15.5449227 9.41715267,15.5553324 L9.44985848,15.5291774 Z M9.44985848,15.5291774 L9.49370677,15.4941118 C9.15422701,15.7147757 10.2318883,15.0314406 10.7297038,14.6971183 C11.5633567,14.1372547 12.3827081,13.5410755 13.1475707,12.9201001 C14.3829188,11.9171478 15.3570936,10.9445466 15.9707237,10.0482572 C16.0768097,9.89330422 16.1713564,9.74160032 16.2509104,9.59910798 C17.0201658,8.17755699 17.2088969,6.78363112 16.7499013,5.65913129 C16.4604017,4.81092573 15.7231445,4.11008901 14.7401472,3.70936139 C13.1379564,3.11266008 11.0475663,3.84092251 9.89976068,5.36430396 L9.50799408,5.8842613 L9.10670536,5.37161711 C7.94954806,3.89335486 6.00516066,3.14638251 4.31830373,3.71958508 C3.36517186,4.00646284 2.65439601,4.72068063 2.23964629,5.77358234 C1.79050315,6.87166888 1.98214559,8.26476279 2.74015555,9.58185512 C2.94777753,9.93163559 3.23221417,10.3090129 3.5869453,10.7089994 C4.17752179,11.3749196 4.94653811,12.0862394 5.85617417,12.8273544 C7.11233096,13.8507929 9.65858244,15.6292133 9.58280954,15.555334 C9.53938013,15.5129899 9.48608859,15.5 9.50042471,15.5 C9.5105974,15.5 9.48275828,15.5074148 9.44985848,15.5291774 Z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+
+            <!-- column7 -->
+            <div class="main-blog-container__col main-blog-container__col-1">
+                <div class="main-blog-container__col-wrapper">
+                    <div class="main-blog-container__image7"></div>
+                    <div class="main-blog-container__info">
+                        <div class="main-blog-container__publication-and-link">
+                            <div class="main-blog-container__publication publication">
+                                <div class="publication__info">
+                                    <div class="publication__icon"></div>
+                                    <!-- publication description -->
+                                    <div class="publication__description">
+                                        <!-- author -->
+                                        <div class="publication__author author">
+                                            <span class="author__name">Ilya Lytvynov</span>
+                                            <div class="author__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19"
+                                                    style="fill-rule:evenodd" class="author__svg">
+                                                    <path
+                                                        d="M15.3812,6.495914 L12.6789333,8.77258837 C12.6191333,8.84477644 12.5099333,8.85722265 12.4354,8.79997005 C12.4215333,8.79001308 12.4094,8.77756686 12.3998667,8.76429089 L9.78686667,6.14327115 C9.67766667,5.99225704 9.46186667,5.95491839 9.305,6.05863687 C9.26946667,6.08186981 9.23913333,6.11091099 9.21573333,6.14493065 L6.60013333,8.81075677 C6.5464,8.88626383 6.43893333,8.90534803 6.3592,8.85390366 C6.34446667,8.84394669 6.33146667,8.83233022 6.32106667,8.81905425 L3.61966667,6.50587098 C3.5018,6.36149485 3.28426667,6.33577266 3.13346667,6.44861837 C3.0494,6.51167921 3,6.60792997 3,6.70998895 L4,14 L15,14 L16,6.70169148 C16,6.51831719 15.8448667,6.36979232 15.6533333,6.36979232 C15.5476,6.36979232 15.4470667,6.41625821 15.3812,6.495914 Z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <!-- time -->
+                                        <div class="publication__time time">
+                                            <span class="time__date">Apr 8</span>
+                                            <span class="time__separator"></span>
+                                            <span class="time__read">1 min</span>
+                                        </div>
+                                    </div>
+                                    <!-- end publication description -->
+                                </div>
+                                <div class="publication__share share">
+                                    <button class="share__btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"
+                                            class="blog-post-homepage-description-fill blog-post-homepage-link-hashtag-hover-fill">
+                                            <path
+                                                d="M2.44398805,5.99973295 C1.62345525,5.9690612 0.980075653,5.28418875 1.00047182,4.46312144 C1.02086799,3.64205413 1.69745853,2.98998831 2.51850166,3.0001164 C3.33954478,3.01024449 3.99985313,3.67880182 4,4.50012255 C3.98424812,5.34399206 3.28763905,6.0153508 2.44398805,5.99973295 L2.44398805,5.99973295 Z M2.44398805,10.9997329 C1.62345525,10.9690612 0.980075653,10.2841888 1.00047182,9.46312144 C1.02086799,8.64205413 1.69745853,7.98998831 2.51850166,8.0001164 C3.33954478,8.01024449 3.99985313,8.67880182 4,9.50012255 C3.98424812,10.3439921 3.28763905,11.0153508 2.44398805,10.9997329 L2.44398805,10.9997329 Z M2.44398805,15.9997329 C1.62345525,15.9690612 0.980075653,15.2841888 1.00047182,14.4631214 C1.02086799,13.6420541 1.69745853,12.9899883 2.51850166,13.0001164 C3.33954478,13.0102445 3.99985313,13.6788018 4,14.5001225 C3.98424812,15.3439921 3.28763905,16.0153508 2.44398805,15.9997329 L2.44398805,15.9997329 Z">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="blog-mobile"><a class="main-blog-container__info-link" href="#">Creamy Pumpkin Soup</a>
+                                <p class="main-blog-container__test">Create a blog post subtitle that summarizes your post in a
+                                    few short punchy sentences and...</p>
+                            </div>
+                        </div>
+                        <div class="test3">
+                            <div class="main-blog-container__info-wrapper">
+                                <div class="main-blog-container__icon-and-number">
+                                    <div class="main-blog-container__eyes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"
+                                            aria-label="Views count" class="blog-icon-fill">
+                                            <title></title>
+                                            <path
+                                                d="M18.6514224,10.4604595 C17.3924224,11.9688254 13.9774224,15.4790227 9.46342244,15.5 L9.42442244,15.5 C6.26242244,15.5 3.20842244,13.7938483 0.345422443,10.4264963 C-0.115140814,9.88163847 -0.115140814,9.08439833 0.345422443,8.5395405 C1.60442244,7.03117456 5.01942244,3.52097727 9.53342244,3.5 L9.57342244,3.5 C12.7354224,3.5 15.7894224,5.20615167 18.6524224,8.5735037 C19.1122856,9.11875503 19.1118633,9.91569484 18.6514224,10.4604595 Z M17.8674224,9.2228003 C15.2084224,6.09518855 12.4194224,4.50990594 9.57442244,4.50990594 L9.54042244,4.50990594 C5.46142244,4.52888537 2.30642244,7.78335969 1.14042244,9.18084575 C0.991393136,9.3517953 0.988008897,9.60533857 1.13242244,9.78019645 C3.79142244,12.9078082 6.58142244,14.4920919 9.42542244,14.4920919 L9.46042244,14.4920919 C13.5394224,14.4741114 16.6934224,11.2196371 17.8604224,9.822151 C18.0095734,9.6511131 18.0125381,9.39726759 17.8674224,9.2228003 L17.8674224,9.2228003 Z M9.49942244,13.3932823 C7.35251405,13.3646853 5.63255349,11.6080263 5.65157552,9.46333471 C5.67059754,7.31864313 7.42144652,5.59270141 9.56852513,5.6021069 C11.7156037,5.61151239 13.4512316,7.35272696 13.4514224,9.49750271 C13.4349115,11.6625186 11.6668124,13.4054651 9.49942244,13.3932823 L9.49942244,13.3932823 Z M9.49942244,6.61762258 C7.91092198,6.63961751 6.63891624,7.93990193 6.65354481,9.52676854 C6.66817338,11.1136351 7.96393479,12.3902997 9.55257137,12.3830695 C11.1412079,12.3758393 12.4252698,11.0874333 12.4254224,9.50049946 C12.4127657,7.89797688 11.1037033,6.60820738 9.49942244,6.61762258 L9.49942244,6.61762258 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div><span>26</span></div>
+                                </div>
+                                <div class="main-blog-container__comment"><span>Write a comment</span></div>
+                                <button class="main-blog-container__like">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img">
+                                        <path
+                                            d="M9.44985848,15.5291774 C9.43911371,15.5362849 9.42782916,15.5449227 9.41715267,15.5553324 L9.44985848,15.5291774 Z M9.44985848,15.5291774 L9.49370677,15.4941118 C9.15422701,15.7147757 10.2318883,15.0314406 10.7297038,14.6971183 C11.5633567,14.1372547 12.3827081,13.5410755 13.1475707,12.9201001 C14.3829188,11.9171478 15.3570936,10.9445466 15.9707237,10.0482572 C16.0768097,9.89330422 16.1713564,9.74160032 16.2509104,9.59910798 C17.0201658,8.17755699 17.2088969,6.78363112 16.7499013,5.65913129 C16.4604017,4.81092573 15.7231445,4.11008901 14.7401472,3.70936139 C13.1379564,3.11266008 11.0475663,3.84092251 9.89976068,5.36430396 L9.50799408,5.8842613 L9.10670536,5.37161711 C7.94954806,3.89335486 6.00516066,3.14638251 4.31830373,3.71958508 C3.36517186,4.00646284 2.65439601,4.72068063 2.23964629,5.77358234 C1.79050315,6.87166888 1.98214559,8.26476279 2.74015555,9.58185512 C2.94777753,9.93163559 3.23221417,10.3090129 3.5869453,10.7089994 C4.17752179,11.3749196 4.94653811,12.0862394 5.85617417,12.8273544 C7.11233096,13.8507929 9.65858244,15.6292133 9.58280954,15.555334 C9.53938013,15.5129899 9.48608859,15.5 9.50042471,15.5 C9.5105974,15.5 9.48275828,15.5074148 9.44985848,15.5291774 Z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+
+            <!-- column8 -->
+            <div class="main-blog-container__col main-blog-container__col-1">
+                <div class="main-blog-container__col-wrapper">
+                    <div class="main-blog-container__image8"></div>
+                    <div class="main-blog-container__info">
+                        <div class="main-blog-container__publication-and-link">
+                            <div class="main-blog-container__publication publication">
+                                <div class="publication__info">
+                                    <div class="publication__icon"></div>
+                                    <!-- publication description -->
+                                    <div class="publication__description">
+                                        <!-- author -->
+                                        <div class="publication__author author">
+                                            <span class="author__name">Ilya Lytvynov</span>
+                                            <div class="author__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19"
+                                                    style="fill-rule:evenodd" class="author__svg">
+                                                    <path
+                                                        d="M15.3812,6.495914 L12.6789333,8.77258837 C12.6191333,8.84477644 12.5099333,8.85722265 12.4354,8.79997005 C12.4215333,8.79001308 12.4094,8.77756686 12.3998667,8.76429089 L9.78686667,6.14327115 C9.67766667,5.99225704 9.46186667,5.95491839 9.305,6.05863687 C9.26946667,6.08186981 9.23913333,6.11091099 9.21573333,6.14493065 L6.60013333,8.81075677 C6.5464,8.88626383 6.43893333,8.90534803 6.3592,8.85390366 C6.34446667,8.84394669 6.33146667,8.83233022 6.32106667,8.81905425 L3.61966667,6.50587098 C3.5018,6.36149485 3.28426667,6.33577266 3.13346667,6.44861837 C3.0494,6.51167921 3,6.60792997 3,6.70998895 L4,14 L15,14 L16,6.70169148 C16,6.51831719 15.8448667,6.36979232 15.6533333,6.36979232 C15.5476,6.36979232 15.4470667,6.41625821 15.3812,6.495914 Z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <!-- time -->
+                                        <div class="publication__time time">
+                                            <span class="time__date">Apr 8</span>
+                                            <span class="time__separator"></span>
+                                            <span class="time__read">1 min</span>
+                                        </div>
+                                    </div>
+                                    <!-- end publication description -->
+                                </div>
+                                <div class="publication__share share">
+                                    <button class="share__btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"
+                                            class="blog-post-homepage-description-fill blog-post-homepage-link-hashtag-hover-fill">
+                                            <path
+                                                d="M2.44398805,5.99973295 C1.62345525,5.9690612 0.980075653,5.28418875 1.00047182,4.46312144 C1.02086799,3.64205413 1.69745853,2.98998831 2.51850166,3.0001164 C3.33954478,3.01024449 3.99985313,3.67880182 4,4.50012255 C3.98424812,5.34399206 3.28763905,6.0153508 2.44398805,5.99973295 L2.44398805,5.99973295 Z M2.44398805,10.9997329 C1.62345525,10.9690612 0.980075653,10.2841888 1.00047182,9.46312144 C1.02086799,8.64205413 1.69745853,7.98998831 2.51850166,8.0001164 C3.33954478,8.01024449 3.99985313,8.67880182 4,9.50012255 C3.98424812,10.3439921 3.28763905,11.0153508 2.44398805,10.9997329 L2.44398805,10.9997329 Z M2.44398805,15.9997329 C1.62345525,15.9690612 0.980075653,15.2841888 1.00047182,14.4631214 C1.02086799,13.6420541 1.69745853,12.9899883 2.51850166,13.0001164 C3.33954478,13.0102445 3.99985313,13.6788018 4,14.5001225 C3.98424812,15.3439921 3.28763905,16.0153508 2.44398805,15.9997329 L2.44398805,15.9997329 Z">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="blog-mobile"><a class="main-blog-container__info-link" href="#">Tips for Your Herb Garden</a>
+                                <p class="main-blog-container__test">Create a blog post subtitle that summarizes your post in a
+                                    few short punchy sentences and...</p>
+                            </div>
+                        </div>
+                        <div class="test3">
+                            <div class="main-blog-container__info-wrapper">
+                                <div class="main-blog-container__icon-and-number">
+                                    <div class="main-blog-container__eyes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"
+                                            aria-label="Views count" class="blog-icon-fill">
+                                            <title></title>
+                                            <path
+                                                d="M18.6514224,10.4604595 C17.3924224,11.9688254 13.9774224,15.4790227 9.46342244,15.5 L9.42442244,15.5 C6.26242244,15.5 3.20842244,13.7938483 0.345422443,10.4264963 C-0.115140814,9.88163847 -0.115140814,9.08439833 0.345422443,8.5395405 C1.60442244,7.03117456 5.01942244,3.52097727 9.53342244,3.5 L9.57342244,3.5 C12.7354224,3.5 15.7894224,5.20615167 18.6524224,8.5735037 C19.1122856,9.11875503 19.1118633,9.91569484 18.6514224,10.4604595 Z M17.8674224,9.2228003 C15.2084224,6.09518855 12.4194224,4.50990594 9.57442244,4.50990594 L9.54042244,4.50990594 C5.46142244,4.52888537 2.30642244,7.78335969 1.14042244,9.18084575 C0.991393136,9.3517953 0.988008897,9.60533857 1.13242244,9.78019645 C3.79142244,12.9078082 6.58142244,14.4920919 9.42542244,14.4920919 L9.46042244,14.4920919 C13.5394224,14.4741114 16.6934224,11.2196371 17.8604224,9.822151 C18.0095734,9.6511131 18.0125381,9.39726759 17.8674224,9.2228003 L17.8674224,9.2228003 Z M9.49942244,13.3932823 C7.35251405,13.3646853 5.63255349,11.6080263 5.65157552,9.46333471 C5.67059754,7.31864313 7.42144652,5.59270141 9.56852513,5.6021069 C11.7156037,5.61151239 13.4512316,7.35272696 13.4514224,9.49750271 C13.4349115,11.6625186 11.6668124,13.4054651 9.49942244,13.3932823 L9.49942244,13.3932823 Z M9.49942244,6.61762258 C7.91092198,6.63961751 6.63891624,7.93990193 6.65354481,9.52676854 C6.66817338,11.1136351 7.96393479,12.3902997 9.55257137,12.3830695 C11.1412079,12.3758393 12.4252698,11.0874333 12.4254224,9.50049946 C12.4127657,7.89797688 11.1037033,6.60820738 9.49942244,6.61762258 L9.49942244,6.61762258 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div><span>26</span></div>
+                                </div>
+                                <div class="main-blog-container__comment"><span>Write a comment</span></div>
+                                <button class="main-blog-container__like">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img">
+                                        <path
+                                            d="M9.44985848,15.5291774 C9.43911371,15.5362849 9.42782916,15.5449227 9.41715267,15.5553324 L9.44985848,15.5291774 Z M9.44985848,15.5291774 L9.49370677,15.4941118 C9.15422701,15.7147757 10.2318883,15.0314406 10.7297038,14.6971183 C11.5633567,14.1372547 12.3827081,13.5410755 13.1475707,12.9201001 C14.3829188,11.9171478 15.3570936,10.9445466 15.9707237,10.0482572 C16.0768097,9.89330422 16.1713564,9.74160032 16.2509104,9.59910798 C17.0201658,8.17755699 17.2088969,6.78363112 16.7499013,5.65913129 C16.4604017,4.81092573 15.7231445,4.11008901 14.7401472,3.70936139 C13.1379564,3.11266008 11.0475663,3.84092251 9.89976068,5.36430396 L9.50799408,5.8842613 L9.10670536,5.37161711 C7.94954806,3.89335486 6.00516066,3.14638251 4.31830373,3.71958508 C3.36517186,4.00646284 2.65439601,4.72068063 2.23964629,5.77358234 C1.79050315,6.87166888 1.98214559,8.26476279 2.74015555,9.58185512 C2.94777753,9.93163559 3.23221417,10.3090129 3.5869453,10.7089994 C4.17752179,11.3749196 4.94653811,12.0862394 5.85617417,12.8273544 C7.11233096,13.8507929 9.65858244,15.6292133 9.58280954,15.555334 C9.53938013,15.5129899 9.48608859,15.5 9.50042471,15.5 C9.5105974,15.5 9.48275828,15.5074148 9.44985848,15.5291774 Z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+
+            <!-- column9 -->
+            <div class="main-blog-container__col main-blog-container__col-1">
+                <div class="main-blog-container__col-wrapper">
+                    <div class="main-blog-container__image9"></div>
+                    <div class="main-blog-container__info">
+                        <div class="main-blog-container__publication-and-link">
+                            <div class="main-blog-container__publication publication">
+                                <div class="publication__info">
+                                    <div class="publication__icon"></div>
+                                    <!-- publication description -->
+                                    <div class="publication__description">
+                                        <!-- author -->
+                                        <div class="publication__author author">
+                                            <span class="author__name">Ilya Lytvynov</span>
+                                            <div class="author__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19"
+                                                    style="fill-rule:evenodd" class="author__svg">
+                                                    <path
+                                                        d="M15.3812,6.495914 L12.6789333,8.77258837 C12.6191333,8.84477644 12.5099333,8.85722265 12.4354,8.79997005 C12.4215333,8.79001308 12.4094,8.77756686 12.3998667,8.76429089 L9.78686667,6.14327115 C9.67766667,5.99225704 9.46186667,5.95491839 9.305,6.05863687 C9.26946667,6.08186981 9.23913333,6.11091099 9.21573333,6.14493065 L6.60013333,8.81075677 C6.5464,8.88626383 6.43893333,8.90534803 6.3592,8.85390366 C6.34446667,8.84394669 6.33146667,8.83233022 6.32106667,8.81905425 L3.61966667,6.50587098 C3.5018,6.36149485 3.28426667,6.33577266 3.13346667,6.44861837 C3.0494,6.51167921 3,6.60792997 3,6.70998895 L4,14 L15,14 L16,6.70169148 C16,6.51831719 15.8448667,6.36979232 15.6533333,6.36979232 C15.5476,6.36979232 15.4470667,6.41625821 15.3812,6.495914 Z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <!-- time -->
+                                        <div class="publication__time time">
+                                            <span class="time__date">Apr 8</span>
+                                            <span class="time__separator"></span>
+                                            <span class="time__read">1 min</span>
+                                        </div>
+                                    </div>
+                                    <!-- end publication description -->
+                                </div>
+                                <div class="publication__share share">
+                                    <button class="share__btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"
+                                            class="blog-post-homepage-description-fill blog-post-homepage-link-hashtag-hover-fill">
+                                            <path
+                                                d="M2.44398805,5.99973295 C1.62345525,5.9690612 0.980075653,5.28418875 1.00047182,4.46312144 C1.02086799,3.64205413 1.69745853,2.98998831 2.51850166,3.0001164 C3.33954478,3.01024449 3.99985313,3.67880182 4,4.50012255 C3.98424812,5.34399206 3.28763905,6.0153508 2.44398805,5.99973295 L2.44398805,5.99973295 Z M2.44398805,10.9997329 C1.62345525,10.9690612 0.980075653,10.2841888 1.00047182,9.46312144 C1.02086799,8.64205413 1.69745853,7.98998831 2.51850166,8.0001164 C3.33954478,8.01024449 3.99985313,8.67880182 4,9.50012255 C3.98424812,10.3439921 3.28763905,11.0153508 2.44398805,10.9997329 L2.44398805,10.9997329 Z M2.44398805,15.9997329 C1.62345525,15.9690612 0.980075653,15.2841888 1.00047182,14.4631214 C1.02086799,13.6420541 1.69745853,12.9899883 2.51850166,13.0001164 C3.33954478,13.0102445 3.99985313,13.6788018 4,14.5001225 C3.98424812,15.3439921 3.28763905,16.0153508 2.44398805,15.9997329 L2.44398805,15.9997329 Z">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="blog-mobile"><a class="main-blog-container__info-link" href="#">Avocado Season Is Here</a>
+                                <p class="main-blog-container__test">Create a blog post subtitle that summarizes your post in a
+                                    few short punchy sentences and...</p>
+                            </div>
+                        </div>
+                        <div class="test3">
+                            <div class="main-blog-container__info-wrapper">
+                                <div class="main-blog-container__icon-and-number">
+                                    <div class="main-blog-container__eyes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"
+                                            aria-label="Views count" class="blog-icon-fill">
+                                            <title></title>
+                                            <path
+                                                d="M18.6514224,10.4604595 C17.3924224,11.9688254 13.9774224,15.4790227 9.46342244,15.5 L9.42442244,15.5 C6.26242244,15.5 3.20842244,13.7938483 0.345422443,10.4264963 C-0.115140814,9.88163847 -0.115140814,9.08439833 0.345422443,8.5395405 C1.60442244,7.03117456 5.01942244,3.52097727 9.53342244,3.5 L9.57342244,3.5 C12.7354224,3.5 15.7894224,5.20615167 18.6524224,8.5735037 C19.1122856,9.11875503 19.1118633,9.91569484 18.6514224,10.4604595 Z M17.8674224,9.2228003 C15.2084224,6.09518855 12.4194224,4.50990594 9.57442244,4.50990594 L9.54042244,4.50990594 C5.46142244,4.52888537 2.30642244,7.78335969 1.14042244,9.18084575 C0.991393136,9.3517953 0.988008897,9.60533857 1.13242244,9.78019645 C3.79142244,12.9078082 6.58142244,14.4920919 9.42542244,14.4920919 L9.46042244,14.4920919 C13.5394224,14.4741114 16.6934224,11.2196371 17.8604224,9.822151 C18.0095734,9.6511131 18.0125381,9.39726759 17.8674224,9.2228003 L17.8674224,9.2228003 Z M9.49942244,13.3932823 C7.35251405,13.3646853 5.63255349,11.6080263 5.65157552,9.46333471 C5.67059754,7.31864313 7.42144652,5.59270141 9.56852513,5.6021069 C11.7156037,5.61151239 13.4512316,7.35272696 13.4514224,9.49750271 C13.4349115,11.6625186 11.6668124,13.4054651 9.49942244,13.3932823 L9.49942244,13.3932823 Z M9.49942244,6.61762258 C7.91092198,6.63961751 6.63891624,7.93990193 6.65354481,9.52676854 C6.66817338,11.1136351 7.96393479,12.3902997 9.55257137,12.3830695 C11.1412079,12.3758393 12.4252698,11.0874333 12.4254224,9.50049946 C12.4127657,7.89797688 11.1037033,6.60820738 9.49942244,6.61762258 L9.49942244,6.61762258 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div><span>26</span></div>
+                                </div>
+                                <div class="main-blog-container__comment"><span>Write a comment</span></div>
+                                <button class="main-blog-container__like">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img">
+                                        <path
+                                            d="M9.44985848,15.5291774 C9.43911371,15.5362849 9.42782916,15.5449227 9.41715267,15.5553324 L9.44985848,15.5291774 Z M9.44985848,15.5291774 L9.49370677,15.4941118 C9.15422701,15.7147757 10.2318883,15.0314406 10.7297038,14.6971183 C11.5633567,14.1372547 12.3827081,13.5410755 13.1475707,12.9201001 C14.3829188,11.9171478 15.3570936,10.9445466 15.9707237,10.0482572 C16.0768097,9.89330422 16.1713564,9.74160032 16.2509104,9.59910798 C17.0201658,8.17755699 17.2088969,6.78363112 16.7499013,5.65913129 C16.4604017,4.81092573 15.7231445,4.11008901 14.7401472,3.70936139 C13.1379564,3.11266008 11.0475663,3.84092251 9.89976068,5.36430396 L9.50799408,5.8842613 L9.10670536,5.37161711 C7.94954806,3.89335486 6.00516066,3.14638251 4.31830373,3.71958508 C3.36517186,4.00646284 2.65439601,4.72068063 2.23964629,5.77358234 C1.79050315,6.87166888 1.98214559,8.26476279 2.74015555,9.58185512 C2.94777753,9.93163559 3.23221417,10.3090129 3.5869453,10.7089994 C4.17752179,11.3749196 4.94653811,12.0862394 5.85617417,12.8273544 C7.11233096,13.8507929 9.65858244,15.6292133 9.58280954,15.555334 C9.53938013,15.5129899 9.48608859,15.5 9.50042471,15.5 C9.5105974,15.5 9.48275828,15.5074148 9.44985848,15.5291774 Z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+            <!-- end column9 -->
+        </div>
+        
+    </div>
+</section>
+    </main>
+    <!-- FOOTER-container -->
+    <footer class="page-footer">
+        <div class="page-footer__up-footer up-footer">
+            <div class="main-footer__working-time working-time">
+                <div class="working-time__grid">
+                    <div class="working-time__col working-time__col-1">
+                        <div class="working-time__col-wrapper">
+                            <p> 500 Terry Francois Street</p>
+                            <p> San Francisco, CA 94158</p>
+                            <p> info@mysite.com</p>
+                            <p> Tel: 123-456-7890</p>
+                            <p> Fax: 123-456-7890</p>
+                        </div>
+                    </div>
+                    <div class="working-time__col working-time__col-1 middle-line">
+                        <div class="working-time__col-wrapper">
+                            <h2 class="working-time__col-title">Opening Hours</h2>
+                            <br>
+                            <p>Mon - Fri: 8am - 8pm</p>
+                            <p>Saturday: 9am - 7pm</p>
+                            <p>Sunday: 9am - 8pm</p>
+
+                        </div>
+                    </div>
+                    <div class="working-time__col working-time__col-1">
+                        <div class="working-time__col-wrapper">
+                            <h2 class="working-time__col-title">Delivery Hours</h2>
+                            <br>
+                            <p>Mondays : 8am - 1pm</p>
+                            <p>Wednesdays: 8am - 1pm</p>
+                            <p>Fridays: 8am - 1pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer__main-footer main-footer">
+            <div class="main-footer__email-container email-container">
+                <p class="email-container__description">Get the Latest News & <br> Updates from Our Farm</p>
+
+                <div class="email-container__enter-email enter-email">
+                    <label class="enter-email__form-text" for="">Enter Your email here*</label>
+                    <input class="enter-email__email" placeholder="Email" type="email" name="email-footer" value="" />
+                </div>
+                <button class="email-container__btn">Join</button>
+
+            </div>
+            <div class="main-footer__social-container social-container">
+                <div>
+                    <a class="social-container__link" href="https://www.facebook.com/wix">Facebook</a></div>
+                <div><a class="social-container__link social-container__link_middle"
+                        href="https://twitter.com/wix">Twitter</a></div>
+                <div><a class="social-container__link" href="https://www.instagram.com/wix/">Instagram</a></div>
+
+            </div>
+            <div class="main-footer__created-by-link created-by-link">
+                <div class="desctop-link"><span class="created-by-link__text">© 2023 by Deerfield Farm. Proudly created
+                        with <a class="created-by-link__link" href="http://wix.com/">Wix.com</a> </span></div>
+                <div class="mobile-link"><span class="created-by-link__text">© 2023 by Deerfield Farm. Proudly <br>
+                        created with <a class="created-by-link__link" href="http://wix.com/">Wix.com</a> </span></div>
+            </div>
+        </div>
+
+        </div>
+        <div class="message-container">
+            <section class="message-container__message-bar message-bar">
+                <div class="message-bar_symbol">
+                    <svg viewBox="0 0 23 23.36" fill="#fff" width="26px" height="26px">
+                        <g id="Layer_2">
+                            <path
+                                d="M22.81,9.41a11.49,11.49,0,1,0-7.47,12.93.47.47,0,0,1,.3,0l3.05,1a1,1,0,0,0,1.3-1V19.42a.48.48,0,0,1,.13-.32,11.63,11.63,0,0,0,1.3-1.79A11.47,11.47,0,0,0,22.81,9.41ZM7.5,12.5a1,1,0,1,1,1-1A1,1,0,0,1,7.5,12.5Zm4,0a1,1,0,1,1,1-1A1,1,0,0,1,11.5,12.5Zm4,0a1,1,0,1,1,1-1A1,1,0,0,1,15.5,12.5Z"
+                                id="Layer_1-2"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="message-bar_symbol-mobile">
+                    <svg viewBox="17 8 17 17.989" fill="white" width="50" height="30"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path
+                                d="M19 8c-1.105 0-2 .892-2 2.005v9.577a2 2 0 0 0 1.99 2.004h2.238l-.18 3.847c-.027.555.3.724.736.371L27 21.586h4.994A2.001 2.001 0 0 0 34 19.582v-9.577C34 8.897 33.11 8 32 8H19z"
+                                fill-rule="evenodd"></path>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+            <!-- message-window -->
+            <div class="message-container__message-window message-window">
+                <button class="message-window__close-btn"></button>
+                <div class="message-window__description">
+                    <div class="message-window__wrapper-svg">
+                        <svg class="message-window__svg" viewBox="0 0 60 60" fill="white" width="1em" height="1em">
+                            <g id="Layer_2">
+                                <path
+                                    d="M0,0V60H60V0ZM40.37,47A19.15,19.15,0,0,1,13.9,41.23l-.06-.09a1,1,0,0,1,1.74-1,17.15,17.15,0,0,0,28.85,0l.06-.09a1,1,0,0,1,1.62,1.17A19.15,19.15,0,0,1,40.37,47Zm-19.53-19a3.58,3.58,0,0,0-3.58,3.58,1,1,0,0,1-2,0,5.58,5.58,0,1,1,11.16,0,1,1,0,0,1-2,0h0A3.58,3.58,0,0,0,20.84,27.95Zm18.32,0a3.58,3.58,0,0,0-3.58,3.58,1,1,0,0,1-2,0,5.58,5.58,0,1,1,11.16,0,1,1,0,0,1-2,0h0A3.58,3.58,0,0,0,39.16,27.95Z"
+                                    id="Layer_1-2"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <h2 class="message-window__up-text">Let's Chat!</h2>
+                    <h3 class="message-window__up-text">Ask us any questions</h3>
+                    <div class="message-window__up-text bottom-text">
+                        <div class="svg-test">
+                            <svg viewBox="0 0 11 14" fill="currentColor" width="11" height="14" class="_3xRMk">
+                                <g id="Typically-replies" stroke="none" fill="none" stroke-width="1"
+                                    fill-rule="evenodd">
+                                    <g id="Typically-replies---Chat-w-Business-Content" transform="translate(-137 -361)"
+                                        fill="currentColor" fill-rule="nonzero">
+                                        <g id="iconmonstr-connection-1-copy-6" transform="translate(137 361)">
+                                            <path id="Path" d="M3.3 14L4.95 8.75 0 8.75 7.7 0 6.05 5.25 11 5.25z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <h4>We'll reply as soon as we can</h4>
+                    </div>
+                </div>
+                <div class="message-window__message-bottom message-bottom">
+                    <div class="message-bottom__name-company">
+                        <span>Powered by</span><a href="https://ru.wix.com/ascend/home?utm_campaign=vir_wixad_chat"><img
+                                src="./src/img/Ascend.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="message-bottom__type-text type-text">
+                        <div class="type-text__smile-icon">
+                            <svg viewBox="0 0 20 20" fill="currentColor" width="20px" height="20px">
+                                <g id="Layer_2">
+                                    <path
+                                        d="M10,0a10,10,0,1,0,9.85,8.26A10,10,0,0,0,10,0Zm0,19A9,9,0,1,1,18.87,8.44,9.11,9.11,0,0,1,19,10,9,9,0,0,1,10,19Zm4.23-6.88a4.5,4.5,0,0,1-8.72,0l1-.25a3.5,3.5,0,0,0,6.78,0ZM8,8A1,1,0,1,1,7,7,1,1,0,0,1,8,8Zm6,0a1,1,0,1,1-1-1A1,1,0,0,1,14,8Z"
+                                        id="Layer_1-2"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <input class="type-text__input" placeholder="Type your message..." />
+                        <div class="type-text__attach-icon">
+                            <svg viewBox="0 0 9 23" fill="currentColor" width="9px" height="23px">
+                                <g id="Layer_2">
+                                    <path
+                                        d="M4.5,23A4.5,4.5,0,0,1,0,18.5V4.5a4.5,4.5,0,0,1,9,0H8a3.5,3.5,0,0,0-7,0v14a3.5,3.5,0,0,0,7,0v-9a1.5,1.5,0,0,0-3,0V17H4V9.5a2.5,2.5,0,0,1,5,0v9A4.5,4.5,0,0,1,4.5,23Z"
+                                        id="Layer_1-2"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================================================== -->
+
+    </footer>
+    <script src="./build/bundle.js"></script>
+</body>
+
+</html>

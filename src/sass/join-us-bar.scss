@@ -1,0 +1,205 @@
+@import "./variables";
+@import "./mixins";
+
+.join-bar.is-active {
+  display: block;
+  justify-content: center;
+  list-style: none;
+  background-color: $header-bg-color;
+  height: 100vh;
+  position: fixed;
+  width: 45vw;
+  z-index: 4;
+  top: 0;
+  min-width: 360px;
+  transform: translateX(0);
+  transform-origin: top;
+  transition: transform 200ms;
+  transition-delay: 100ms;
+  right: 0;
+  overflow-y: auto;
+}
+
+.join-bar {
+  display: none;
+  position: absolute;
+}
+
+.form-list {
+  width: 100%;
+  height: 100%;
+  padding: 40px 40px 40px 40px;
+
+  &__title {
+    margin-top: 50px;
+    margin-left: 10px;
+    font-family: MuseoW01-700, Helvetica, sans-serif;
+    font-size: 32px;
+    color: $click-text-color;
+  }
+  &__btn {
+    margin: 20px auto;
+    width: 186px;
+    height: 52px;
+    background-color: $click-text-color;
+    color: $header-bg-color;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 50px;
+
+    &:hover {
+      color: $menu-text-color;
+      background-color: $header-bg-color;
+    }
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin-top: 50px;
+}
+
+.col {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.col-1 {
+  width: 50%;
+}
+
+.col-2 {
+  width: 100%;
+  border: 2px solid $click-text-color;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100%;
+}
+
+.form-input {
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-color: $click-text-color;
+  background-color: $header-bg-color;
+  border-style: solid;
+  padding-left: 20px;
+
+  &::placeholder {
+    color: $click-text-color;
+  }
+}
+
+.form-text {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: $click-text-color;
+  padding-bottom: 10px;
+}
+
+.form-icon_wrapper {
+  position: absolute;
+  right: -5px;
+}
+
+.form-icon {
+  position: absolute;
+  right: 10px;
+  top: -35px;
+}
+
+.close-join {
+  width: 31px;
+  height: 31px;
+  background-color: transparent;
+  margin-left: 40px;
+  margin-top: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+// ===== radio buton ======
+
+.radio-wrapper {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.package {
+  &__title {
+    color: $click-text-color;
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 20px;
+    margin-bottom: 24px;
+    margin-top: 20px;
+  }
+  &__description {
+    color: $click-text-color;
+  }
+}
+
+.package__description {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 15px;
+  font-size: 13px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.package__description:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  border-radius: 50%;
+  bottom: 1px;
+  border: 2px solid $click-text-color;
+  background-color: transparent;
+}
+
+// .radio:hover input ~ .package__description:before {
+//   background-color: $header-bg-color;
+// }
+input[type="radio"]:checked + .package__description:before {
+  content: "\2022";
+  color: $click-text-color;
+  font-size: 40px;
+  text-align: center;
+  line-height: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .join-bar.is-active {
+    width: 100vw;
+  }
+
+  .col-1 {
+    width: 100%;
+  }
+
+  .close-join {
+    position: absolute;
+    right: 10%;
+  }
+}

@@ -1,0 +1,224 @@
+@import "./variables";
+@import "./mixins";
+
+.title-container {
+  width: 100%;
+  height: 360px;
+  background-color: $header-bg-color;
+  &__wrapper {
+    max-width: 970px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 60px;
+  }
+  &__title {
+    font-family: MuseoW01-700, Helvetica, sans-serif;
+    font-size: 32px;
+    color: $color-text-slider;
+    padding-bottom: 10px;
+  }
+  &__subtitle {
+    font-size: 22px;
+    color: $color-text-slider;
+  }
+}
+
+.images-container {
+  max-width: 1030px;
+  width: 100%;
+  height: 1350px;
+  margin: -100px auto;
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 150px;
+  }
+  &__col {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+
+  &__col-1 {
+    width: 50%;
+    align-content: space-between;
+    height: 530px;
+  }
+  &__col-wrapper {
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 100%;
+    // ====
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  // ======
+  &__slide.active {
+    height: 447px;
+    @include backgroundImage();
+    display: block;
+  }
+
+  &__slide {
+    display: none;
+    position: relative;
+  }
+  &__title {
+    @include allTitle();
+    position: relative;
+  }
+
+  &__title:before {
+    border-bottom: 1px solid #293e31;
+    position: absolute;
+    top: 150%;
+    left: 0;
+    width: 65px;
+    content: "";
+  }
+}
+
+// slide autumn
+.slide-autumn-1 {
+  background-image: url(../img/produce_carrot.webp);
+}
+.slide-autumn-2 {
+  background-image: url(../img/products_autumn2.webp);
+}
+.slide-autumn-3 {
+  background-image: url(../img/products_autumn3.webp);
+}
+.slide-autumn-4 {
+  background-image: url(../img/products_autumn4.webp);
+}
+.slide-autumn-5 {
+  background-image: url(../img/products_autumn5.webp);
+}
+// slide winter
+.slide-winter-1 {
+  background-image: url(../img/products_winter1.webp);
+}
+.slide-winter-2 {
+  background-image: url(../img/products_winter2.webp);
+}
+.slide-winter-3 {
+  background-image: url(../img/products_winter3.webp);
+}
+.slide-winter-4 {
+  background-image: url(../img/products_winter4.webp);
+}
+.slide-winter-5 {
+  background-image: url(../img/products_winter5.webp);
+}
+// slide spring
+.slide-spring-1 {
+  background-image: url(../img/products_spring1.webp);
+}
+.slide-spring-2 {
+  background-image: url(../img/products_spring2.webp);
+}
+.slide-spring-3 {
+  background-image: url(../img/products_spring3.webp);
+}
+.slide-spring-4 {
+  background-image: url(../img/products_spring4.webp);
+}
+.slide-spring-5 {
+  background-image: url(../img/products_spring5.webp);
+}
+// slide summer
+.slide-summer-1 {
+  background-image: url(../img/products_summer1.webp);
+}
+.slide-summer-2 {
+  background-image: url(../img/products_summer2.webp);
+}
+.slide-summer-3 {
+  background-image: url(../img/products_summer3.webp);
+}
+.slide-summer-4 {
+  background-image: url(../img/products_summer4.webp);
+}
+.slide-summer-5 {
+  background-image: url(../img/products_summer5.webp);
+}
+// end slide summer
+// ====
+.slider-images-wrapper {
+  position: relative;
+}
+
+.image-sliders__nav_prev {
+  position: absolute;
+  width: 35px;
+  height: 58px;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.image-sliders__nav_next {
+  position: absolute;
+  width: 35px;
+  height: 58px;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+//================= MEDIA ===================
+
+@media screen and (max-width: 767px) {
+  .images-container {
+    height: 100%;
+    margin: 30px auto;
+
+    &__grid {
+      height: auto;
+    }
+    &__col {
+      margin-bottom: 40px;
+    }
+
+    &__col-1 {
+      width: 100%;
+      height: 320px;
+    }
+    &__slide.active {
+      height: 280px;
+    }
+    &__title {
+      font-size: 25px;
+    }
+    &__title:before {
+      top: 110%;
+    }
+  }
+  // ===========
+  .title-container {
+    height: 250px;
+
+    &__wrapper {
+      max-width: 280px;
+      width: 100%;
+      margin-left: 30px;
+      padding-top: 60px;
+    }
+    &__title {
+      font-size: 28px;
+      padding-bottom: 30px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+    }
+  }
+}

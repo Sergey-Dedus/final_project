@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://db.onlinewebfonts.com/c/5cfbe76f00e7c4d6ba5d963f6c179606?family=MuseoW01-700");
+@import url("https://db.onlinewebfonts.com/c/55c4f556836775174bfac94178a3fe82?family=ProximaNW01-Reg");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+p,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button,
+a {
+  outline: none;
+}
+
+button,
+input {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #dacec2;
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    min-width: 360px;
+  }
+}
