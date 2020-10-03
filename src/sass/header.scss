@@ -59,6 +59,10 @@
 //   }
 // }
 
+#menu__link_current {
+  color: $click-text-color;
+}
+
 .page-header {
   background-color: $header-bg-color;
   width: 100%;

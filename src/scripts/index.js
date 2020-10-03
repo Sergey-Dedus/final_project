@@ -12,6 +12,8 @@ import "./login-bar.js";
 import "./home_produce-slider.js";
 import "./home_main-slider.js";
 import "./testjs.js";
+import "./blog-like.js";
+import "./main-blog-like.js";
 
 const helloWorld = "test hello";
 const t = () => {
