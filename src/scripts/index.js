@@ -15,10 +15,6 @@ import "./testjs.js";
 import "./blog-like.js";
 import "./main-blog-like.js";
 
-const helloWorld = "test hello";
-const t = () => {
-  console.log("test console");
-};
 // =====================================
 import { PostForm } from "./PostForm.js";
 const forma = new PostForm(document.querySelector("body"));
