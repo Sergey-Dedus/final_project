@@ -1,1 +1,1 @@
-Link http://htmlpreview.github.io/?https://github.com/Sergey-Dedus/final_project/blob/master/index.html
+Preview site https://sergey-dedus.github.io/final_project
